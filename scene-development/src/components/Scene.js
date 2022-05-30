@@ -1,7 +1,7 @@
 import Draggable from "react-draggable";
 import { Square, Circle } from "./Shapes";
 import { useState, useEffect } from "react";
-
+import Notebook from "./notebook/Notebook";
 const arr = [Square, Circle];
 
 function Scene() {
@@ -90,6 +90,7 @@ function Scene() {
           </div>
         </Draggable>
       ))}
+      <Notebook/>
     </div>
   );
 }

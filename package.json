@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "react-redux": "^8.0.2",
+    "sass-loader": "^13.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.52.1"
+  }
+}

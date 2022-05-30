@@ -1,0 +1,44 @@
+// All custom mixins here
+
+ @mixin volumeStateStyle {
+   width: 20px;
+   height: 20px;
+   text-align: center;
+   margin-bottom: 3px;
+   background: $white;
+   box-shadow: 1.5px 2px 1px rgba(0, 0, 0, 0.2);
+ }
+
+ @mixin centrifuge-analog-screen {
+  position: relative;
+  border-radius: 2px;
+  background-color: $blue4;
+  overflow: hidden;
+  -moz-box-shadow: inset 3px 3px 4px rgba(255, 255, 255, 0.5), inset -3px -3px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 3px 3px 4px rgba(255, 255, 255, 0.5), inset -3px -3px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 3px 3px 4px rgba(255, 255, 255, 0.5), inset -3px -3px 4px rgba(0, 0, 0, 0.5);
+ }
+
+ @mixin btn_transparency {
+  border: none;
+  outline: none;
+  background: transparent;
+ }
+
+ @mixin flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ @mixin flex-align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ @mixin space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
