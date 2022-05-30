@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import FocusLock from 'react-focus-lock'
+import FocusLock from "react-focus-lock";
 // import {
 //     notebookSection,
 //     notebookPopout,
@@ -143,14 +143,16 @@ class Notebook extends Component {
           tabIndex={-1}
           className="notebook-body"
           style={{ display: this.props.notebookExpanded ? null : "none" }}
+        ></div>
+        <FocusLock
+          disabled={
+            this.props.sectionSelected === "Protocol" || this.props.modalVisible
+          }
         >
-          
-        </div>
-        <FocusLock disabled={this.props.sectionSelected === 'Protocol' || this.props.modalVisible}>
           {this.props.sectionSelected === "Protocol"
             ? this.renderProtocolView()
             : this.renderSectionList()}
-          </FocusLock>
+        </FocusLock>
       </div>
     );
   }

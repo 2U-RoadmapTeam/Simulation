@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Collapse } from 'react-collapse'
 //import { notebookPopout } from 'actions';
-// import NotebookPopout from '../notebookPopout/NotebookPopout'
+import NotebookPopout from '../notebookPopout/NotebookPopout'
 
 
 // Styles
@@ -53,7 +53,7 @@ class NotebookSection extends Component {
                       aria-hidden={!this.props.focused}
                       theme={{collapse: 'collapse', content: 'collapse-content'}}
                       springConfig={{stiffness: 500, damping: 30}}>
-                        {/* {(this.props.focused)?<NotebookPopout onSelect={this.onSelect} index={this.props.index} section={this.props.text} tab={(this.props.focused)? null: -1}/>:null} */}
+                        {(this.props.focused)?<NotebookPopout onSelect={this.onSelect} index={this.props.index} section={this.props.text} tab={(this.props.focused)? null: -1}/>:null}
                   </Collapse>
               </div>
             </div>

@@ -1,0 +1,475 @@
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
+@import "../../../../styles/mixins";
+
+.Predictions {
+  .description {
+    line-height: 1.5;
+
+    .row {
+      display: flex;
+
+      .text {
+        margin-left: 5px;
+      }
+    }
+    .header,
+    .sub-header {
+      color: $white;
+    }
+  }
+
+  .predictions-question-container,
+  .gel-container,
+  .section-1,
+  .section-2 {
+    border: 1px solid $navy3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: $white;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.section-1,
+.section-2 {
+  border: 0px !important;
+  padding: 0px !important;
+}
+
+.section-1{
+  position: relative;
+  .imgOverlayDiv1{
+    position: absolute;
+    top: 48px;
+    left: 38px;
+    width: 240px;
+    height: 150px;
+  }
+  .imgOverlayDiv2{
+    position: absolute;
+    top: 48px;
+    left: 305px;
+    width: 240px;
+    height: 150px;
+  }
+  .imgOverlayDiv3{
+    position: absolute;
+    top: 388px;
+    left: 35px;
+    width: 500px;
+    height: 158px;
+  }
+  .imgOverlayDiv4{
+    position: absolute;
+    top: 562px;
+    left: 35px;
+    width: 500px;
+    height: 158px;
+  }
+
+}
+
+.gel-container {
+  background-image: linear-gradient(to bottom, #014c91, #003257) !important;
+}
+
+.gel-container {
+  .question-footer {
+    display: flex;
+    margin-top: 24px;
+
+    button {
+      background: $yellow1;
+      border-radius: 5px;
+      width: 198px;
+      height: 52px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin-left: auto;
+    }
+
+    button[disabled] {
+      background: $navy6;
+    }
+  }
+}
+
+.lane-legend {
+  height: 130px;
+  width: 75%;
+  margin-left: 21%;
+  @include flex-center;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: $white;
+  overflow: hidden;
+
+  &__type {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 38px;
+    margin-bottom: 14px;
+    text-align: center;
+    img {
+      @include flex-center;
+      position: relative;
+      width: 100%;
+      top: -9px;
+    }
+    &--label {
+      position: relative;
+      top: -42px;
+      padding: 3px 5px;
+      color: $white;
+      border-radius: 5px;
+      background-color: $navy1;
+    }
+
+    .tubeBtnImg {
+
+    }
+
+    .greyedOut{
+      background-color: #ccd8e1;
+      color: #ccd8e1;
+    }
+  }
+}
+
+.Gel {
+  cursor: pointer;
+
+  .label {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $body;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 14px;
+    text-align: center;
+    margin: 0px;
+    padding: 4px 6px;
+    border-radius: 5px;
+    background-color: $navy2;
+    pointer-events: none;
+    color: white;
+    white-space: nowrap;
+    user-select: none;
+
+    &:after {
+      position: absolute;
+      top: calc(100% - 1px);
+      left: calc(50% - 10px);
+      width: 0px;
+      height: 0px;
+      content: "";
+      border-style: solid;
+      border-width: 10px 10px 0px;
+      border-color: $navy2 transparent transparent;
+    }
+  }
+}
+
+.Gel-prediction {
+  position: relative;
+  width: 100%;
+
+  .lanes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    .lane {
+      position: absolute;
+      width: 69px;
+      height: 508px;
+      top: 102px !important;
+      cursor: pointer;
+
+      .particle {
+        width: 100%;
+        height: 20px;
+        pointer-events: none;
+      }
+
+      &:active .particle {
+        border: 3px solid $yellow1;
+        box-sizing: border-box;
+      }
+    }
+
+    .particle {
+      &:before {
+        bottom: calc(100% + 5px);
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-bottom-color: $blue5;
+        border-width: 7px;
+        margin-left: -7px;
+      }
+
+      &:after {
+        top: calc(100% + 5px);
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-top-color: $blue5;
+        border-width: 7px;
+        margin-left: -7px;
+      }
+    }
+
+    .lane-1 {
+      left: 107px;
+
+      .particle {
+        background: $blue5;
+        box-shadow: 0px 0px 4px $blue5;
+      }
+    }
+
+    .lane-2 {
+      left: 186px;
+
+      .particle {
+        background: $blue5;
+        box-shadow: 0px 0px 4px $blue5;
+      }
+    }
+
+    .lane-3 {
+      left: 265px;
+
+      .particle {
+        background: $blue5;
+        box-shadow: 0px 0px 4px $blue5;
+      }
+    }
+
+    .lane-4 {
+      left: 344px;
+
+      .particle {
+        background: $blue5;
+        box-shadow: 0px 0px 4px $blue5;
+      }
+    }
+
+    .lane-5 {
+      left: 423px;
+
+      .particle {
+        background: $blue5;
+        box-shadow: 0px 0px 4px $blue5;
+      }
+    }
+  }
+
+  .prediction-bg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.component-select {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid $navy3;
+  border-radius: 5px;
+  background-color: $navy7;
+}
+
+.dropdown {
+  &__header {
+    @include flex-center;
+    padding: 8px;
+    color: $navy3;
+    border: 1px solid $navy5;
+    border-radius: 5px;
+    background-color: $white;
+    cursor: pointer;
+  }
+
+  .dropdownTextChoice{
+    color: $navy1;
+    font-weight: bold;
+  }
+
+  &__items {
+    padding: 0px !important;
+    margin-bottom: 0px;
+    border: 1px solid $navy5;
+    border-radius: 5px;
+    background-color: $white !important;
+    box-shadow: none !important;
+
+    &--choice {
+      list-style: none;
+      padding: 12px 8px;
+      margin: 0px;
+      border-bottom: 1px solid $navy5;
+      cursor: pointer;
+    }
+
+    &--choice:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.down-arrow {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+
+  border-top: 8px solid $navy5;
+}
+
+.gel-lane {
+  position: absolute;
+  top: 46px;
+  left: 41px;
+  @include flex-center;
+  width: 87%;
+
+  .gelHole0 {
+    color: transparent;
+    position: absolute;
+    width: 60px;
+    height: 20px;
+  }
+
+  .gelHole {
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    border: 5px solid $yellow1;
+    color: transparent;
+  }
+
+  .gelHole2 {
+    position: absolute;
+    width: 68px;
+    height: 28px;
+    border-radius: 3px;
+    background-color: #0063c3;
+    color: white;
+    text-align: center;
+    line-height: 28px;
+  }
+  .gelHoleLane1 {
+    position: absolute;
+    left: 0px;
+    width: 68px;
+    height: 28px;
+    border-radius: 3px;
+    background-color: #0063c3;
+    color: white;
+    text-align: center;
+    line-height: 28px;
+  }
+
+  .gelRail {
+    top: 45px;
+    height: 515px;
+    width: 60px;
+    position: absolute;
+    cursor: move;
+    //pointer-events: none;
+
+    .focused{
+      border: 5px solid $yellow1;
+    }
+
+    .gelBand {
+      position: absolute;
+      width: 65px;
+      height: 16px;
+      background-color: #003e6b;
+      color: white;
+      text-align: center;
+      font-size: 10px;
+      line-height: 16px;
+      pointer-events: none;
+      z-index: 1;
+
+      &:focus {
+        outline: 2px solid $yellow1;
+
+        &:before{
+          content: "▲";
+          color: $navy1;
+          position: absolute;
+          bottom: 100%;
+          height: 15px;
+          width: 20px;
+          background: $yellow1;
+          left: 50%;
+          transform: translate(-50%, 0);
+          border-radius: 40px 40px 0 0;
+
+        }
+        &:after{
+          content: "▼";
+          color: $navy1;
+          position: absolute;
+          top: 100%;
+          height: 15px;
+          width: 20px;
+          background: $yellow1;
+          left: 50%;
+          transform: translate(-50%, 0);
+          border-radius: 0 0 40px 40px;
+
+        }
+      }
+
+      .upBtn {
+        position: absolute;
+        left: 30%;
+        top: -12px;
+        height: 12px;
+        border-radius: 10px 10px 0px 0px;
+        background-color: $yellow1;
+        text-align: center;
+        font-size: 9px;
+      }
+
+      .downBtn {
+        position: absolute;
+        left: 30%;
+        bottom: -12px;
+        height: 12px;
+        border-radius: 0px 0px 10px 10px;
+        background-color: $yellow1;
+        text-align: center;
+        font-size: 9px;
+      }
+    }
+  }
+  .highlighted {
+    border: 5px solid $yellow1;
+  }
+
+
+}
