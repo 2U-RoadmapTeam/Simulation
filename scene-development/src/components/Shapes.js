@@ -22,7 +22,7 @@ const Circle = () => {
         cy="75"
         r="75"
         stroke="black"
-        stroke-width="3"
+        strokeWidth="3"
         fill="red"
       />
     </svg>

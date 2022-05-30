@@ -1,0 +1,191 @@
+@import "../../../../styles/colors";
+
+button.anchor {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  border: none;
+  background: transparent;
+}
+
+.protocol-tasks-container {
+  min-height: calc(100% - 100px);
+  padding: 16px;
+  list-style: none;
+
+  .protocol-task {
+    position: relative;
+    padding: 16px 28px 16px 40px;
+    border-radius: 6px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 17px;
+      top: 18px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    &.completed-task:after {
+      display: block;
+    }
+
+    .index {
+      position: absolute;
+      top: 12px;
+      left: 8px;
+      width: 26px;
+      height: 30px;
+
+      span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        color: $white;
+        line-height: 28px;
+        text-align: center;
+      }
+    }
+
+    .task-text {
+      color: $charcoal2;
+    }
+
+    &.current-task {
+      background-color: $yellow1;
+
+      .task-text {
+        color: $charcoal1;
+      }
+    }
+
+    .protocol-menu {
+      position: absolute;
+      top: 9px;
+      right: 0;
+      height: 100%;
+
+      .toggle-menu {
+        cursor: pointer;
+      }
+
+      .collapse {
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        background: $white;
+        will-change: transform;
+        transform: translate(-9px, -28px);
+
+        .collapse-content {
+          padding: 0;
+          min-width: 10em;
+
+          button.anchor {
+            display: block;
+            padding: 8px;
+            color: $navy1;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .notes-content {
+      .notes {
+        padding-top: 8px;
+
+        p {
+          margin: 0;
+          color: $charcoal1;
+          font-weight: bold;
+          white-space: pre-line;
+        }
+      }
+
+      button.anchor {
+        cursor: pointer;
+      }
+
+      button.anchor:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .add-note-panel {
+      p {
+        padding: 16px 0;
+        margin: 0;
+      }
+
+      textarea {
+        display: block;
+        width: 100%;
+        height: 100px;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid $navy3;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background: $navy7;
+      }
+
+      .btns {
+        position: relative;
+        height: 42px;
+        margin: 16px 0 0;
+
+        button.anchor {
+          left: 0;
+          color: $charcoal1;
+          line-height: 42px;
+          background: none;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        button {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 100px;
+          height: 42px;
+          color: $white;
+          font-size: 16px;
+          border: none;
+          border-radius: 5px;
+          background: $blue1;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .hide {
+      visibility: hidden;
+    }
+
+    .showTimerInTaskBtn {
+      padding: 10px 8px;
+      margin-top: 8px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      border: 2px solid #0063c3;
+      border-radius: 4px;
+      background-color: #0063c3;
+      cursor: pointer;
+    }
+  }
+}

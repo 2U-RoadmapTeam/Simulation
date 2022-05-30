@@ -1,7 +1,11 @@
 import Draggable from "react-draggable";
 import { Square, Circle } from "./Shapes";
 import { useState, useEffect } from "react";
-
+import Notebook from "./Notebook/Notebook";
+import { Provider } from "react-redux";
+import configureMockStore from "redux-mock-store";
+const mockStore = configureMockStore();
+const store = mockStore({});
 const arr = [Square, Circle];
 
 function Scene() {
@@ -84,13 +88,16 @@ function Scene() {
           key={i}
           onStop={eval(`handleStop${i+1}`)}
           position={{ x: eval(`coordinates.div${i + 1}x`), y: eval(`coordinates.div${i + 1}y`) }}
+          tabindex={`${i+1}`}
         >
-          <div className="Comp1" tabindex={`${i+1}`}>
+          <div className="Comp1">
           {comp()}
           </div>
         </Draggable>
       ))}
+          <Notebook/>
     </div>
+
   );
 }
 

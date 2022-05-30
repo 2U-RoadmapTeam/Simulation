@@ -1,0 +1,108 @@
+{
+    "Table": {
+        "components": [
+            { "component": "Table", "props": { "type": "Table", "id": 1 } }
+        ],
+        "position": {"left": 10, "top": 630}
+    },
+    "Gel": {
+        "components": [
+            { "component": "Gel", "props": { "type": "Polyacrylamide Gel", "id": 1, "comb": true, "description":"Protein gel consisting of a molecular sieve or mesh called polyacrylamide that separates SDS-coated proteins by mass. It is “precast”, meaning ready to use. The gel sits between plastic plates with a plastic “comb” protecting the gel wells. The gel is already located in an adapter called a “cassette”. Both together are placed inside the electrophoresis box to run the gel." } }
+        ],
+        "position": {"left": 850, "top": 206}
+    },
+    "Shelf": {
+        "components": [
+            { "component": "Shelf", "props": { "type": "Shelf", "id": 1 } }
+        ],
+        "position": {"left": 330, "top": 296}
+    },
+    "Pipette Rack": {
+        "components": [
+            { "component": "Pipette Rack", "props": { "type": "Pipette Rack", "id": 1 } }
+        ],
+        "position": {"left": 30, "top": 47}
+    },
+    "Gel Boxes": {
+        "components": [
+          {"component": "Gel Box", "props": { "type": "Protein Gel Electrophoresis Box", "id": 1, "minVoltage": 0, "maxVoltage": 0, "timerMin": 0, "timerMax": 0, "description": "The electrophoresis box holds the gel upright and is filled with 1X Running buffer." } }
+        ],
+        "position": {"left": 80, "top": 433}
+    },
+    "Flask": {
+      "components": [
+        {"component": "Flask", "props": { "type": "1x Running Buffer", "id": 1, "volume": 500000, "solutions":{"Running Buffer": 500000}, "description": "Salt-containing buffer to cover the gel and transmit the charge through the protein gel, allowing electrophoresis to occur. Contains 1X Tris-glycine (25 mM Tris, 190 mM glycine) + 0.1% SDS." } }
+      ],
+      "position": {"left": 735, "top": 226}
+    },
+    "Pipettes": {
+        "components": [
+            { "component": "Pipette", "props": { "type": "P2", "id": 1, "minVol": 0.2, "maxVol": 2, "volume": 0.2, "volChange": 0.1, "description": "P2 micropipette. Used to draw up and dispense volumes of liquid between 0.2 and 2 microliters (µl)." } },
+            { "component": "Pipette", "props": { "type": "P20", "id": 2, "minVol": 2, "maxVol": 20, "volume": 2, "volChange": 0.5, "description": "P20 micropipette. Used to draw up and dispense volumes of liquid between 2 and 20 microliters (µl)." } },
+            { "component": "Pipette", "props": { "type": "P200", "id": 3, "minVol": 20, "maxVol": 200, "volume": 20, "volChange": 1, "description": "P200 micropipette. Used to draw up and dispense volumes of liquid between 20 and 200 microliters (µl)." } },
+            { "component": "Pipette", "props": { "type": "P1000", "id": 4, "minVol": 200, "maxVol": 1000, "volume": 200, "volChange": 10, "description": "P1000 micropipette. Used to draw up and dispense volumes of liquid between 200 and 1000 microliters (µl)." } }
+        ],
+        "position": {"left": 55, "top": 50}
+    },
+    "Tip Boxes": {
+        "components": [
+            { "component": "Tip Box", "props": { "type": "P2", "id": 1, "description": "Box of P2 tips. Tips are attached to the micropipette and discarded after single use to avoid contamination between transfers." } },
+            { "component": "Tip Box", "props": { "type": "P20", "id": 2, "description": "Box of P20 tips. Tips are attached to the micropipette and discarded after single use to avoid contamination between transfers." } },
+            { "component": "Tip Box", "props": { "type": "P200", "id": 3, "description": "Box of P200 tips. Tips are attached to the micropipette and discarded after single use to avoid contamination between transfers." } },
+            { "component": "Tip Box", "props": { "type": "P1000", "id": 4, "description": "Box of P1000 tips. Tips are attached to the micropipette and discarded after single use to avoid contamination between transfers." } }
+        ],
+        "position": {"left": 330, "top": 172}
+    },
+    "Tube Stand": {
+        "components": [
+            { "component": "Tube Stand", "props": { "type": "Tube Stand", "id": 1 } }
+        ],
+        "position": {"left": 441, "top": 599}
+    },
+    "Trash": {
+        "components": [
+            { "component": "Trash", "props": { "type": "Biohazard", "id": 1, "description": "Waste container. Used to dispose of any biohazardous waste resulting from the experiment, including micropipette tips." } }
+        ],
+        "position": {"left": 855, "top": 541}
+    },
+    "Microcentrifuge": {
+      "components": [
+        { "component": "Microcentrifuge", "props": { "type": "Microcentrifuge", "id": 1, "description": "Motor-driven centrifuge that spins samples at high speed to collect liquid at the bottom of the tube for easy transfer." } }
+      ],
+      "position": {"left": 1000, "top": 502 }
+    },
+    "Heat Block": {
+      "components": [
+        { "component": "Heat Block", "props": { "type": "Heat Block", "id": 1, "description": "Heat block used to incubate samples at a constant temperature, over a long period of time. Has a temperature range from room temperature to 100 degrees Celsius. Also has a timer." } }
+      ],
+      "position": {"left": 970, "top": 182 }
+    },
+    "Power Supply": {
+      "components": [
+        { "component": "Power Supply", "props": { "type": "Power Supply", "id": 1, "description": "Power supply with red and black cords that must be connected to the connection points on the power supply and the lid of the electrophoresis box." } }
+      ],
+      "position": {"left": 280, "top": 559 }
+    },
+    "Solution": {
+        "components": [
+            { "component": "Solution", "props": { "type": "4x SDS sample buffer", "label": "4x SDS Sample Buffer", "id": 1, "shape": "buffer", "volume": 200, "particulate":0.0004, "onRack": true, "fragments":{"SDS": 1}, "solutions": { "4x SDS sample buffer": 200}, "description": "Used to prepare protein samples for gel electrophoresis. It needs to be diluted 4x to have the correct final concentration in the sample." } },
+            { "component": "Solution", "props": { "type": "Wild type vessel", "label": "Wild Type Cell Culture", "id": 2, "shape": "vessel", "volume": 200, "particulate":0.0008, "onRack": true, "solutions": {"Wild type": 200}, "description": "Tube containing a culture of wild type, unedited macrophage cells." } },
+            { "component": "Solution", "props": { "type": "Pancreas vessel", "label": "Pancreas Cell Culture", "id": 3, "shape": "vessel", "volume": 200, "particulate":0.001, "onRack": true, "solutions": {"Pancreas": 200}, "description": "Tube containing a culture of pancreas cells." } },
+            { "component": "Solution", "props": { "type": "Edit 4 vessel", "label": "Edit 4 Cell Culture", "id": 4, "shape": "vessel", "volume": 200, "particulate":0.001, "onRack": true, "solutions": {"Edit 4": 200}, "description": "Tube containing CRISPR-edited macrophage cells: Edit 4." } },
+            { "component": "Solution", "props": { "type": "Edit 7 vessel", "label": "Edit 7 Cell Culture", "id": 5, "shape": "vessel", "volume": 200, "particulate":0.001, "onRack": true, "solutions": {"Edit 7": 200}, "description": "Tube containing another line of CRISPR-edited macrophage cells: Edit 7." } },
+            { "component": "Solution", "props": { "type": "Wild type tube", "label": "Wild Type Cells Tube", "id": 6, "shape": "tube", "volume": 0, "particulate":0.0008, "onRack": true, "solutions": {}, "description": "Empty tube that will contain wild type, unedited macrophage cells." } },
+            { "component": "Solution", "props": { "type": "Pancreas tube", "label": "Pancreas Tube", "id": 7, "shape": "tube", "volume": 0, "particulate":0.001, "onRack": true, "solutions": {}, "description": "Empty tube that will contain pancreas cells." } },
+            { "component": "Solution", "props": { "type": "Edit 4 tube", "label": "Edit 4 Tube", "id": 8, "shape": "tube", "volume": 0, "particulate":0.001, "onRack": true, "solutions": {}, "description": "Empty tube that will contain CRISPR-edited macrophage cells: Edit 4." } },
+            { "component": "Solution", "props": { "type": "Edit 7 tube", "label": "Edit 7 Tube", "id": 9, "shape": "tube", "volume": 0, "particulate":0.001, "onRack": true, "solutions": {}, "description": "Empty tube that will contain the second CRISPR-edited macrophage cells: Edit 7." } },
+            { "component": "Solution", "props": { "type": "Protein ladder", "label": "Protein Ladder", "id": 10, "shape": "tube", "volume": 200, "fragments": {"180": 1, "140": 1, "100": 1,  "75": 1,  "60": 1,  "45": 1,  "35": 1,  "25": 1,  "15": 1,  "10": 1, "SDS": 1}, "onRack": true, "solutions": { "Protein ladder": 200 }, "description": "A size standard called protein ladder containing pre-stained proteins of the following sizes: 10, 15, 25, 35, 45, 60, 75, 100, 140, and 180 kDa (kilodalton). The proteins appear as blue bands in the protein gel." } }
+        ],
+        "position": {"left": 697, "top": 569}
+    },
+    "Power Supply Lead": {
+      "components": [
+        { "component": "Power Supply Lead", "props": { "type": "Power Supply Leads", "id": 1, "description": "These cables connect the power supply to the gel electrophoresis box to enable electricity to flow through the gel." } }
+      ],
+      "position": {"left": 325, "top": 320 }
+    }
+
+}

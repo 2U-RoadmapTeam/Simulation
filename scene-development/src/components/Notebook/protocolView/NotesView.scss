@@ -1,0 +1,83 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts';
+
+
+.notes-collapse {
+
+  .notes-content {
+    height: 100%;
+
+    .notes-view {
+      position: relative;
+      height: 100%;
+
+      .notes-head {
+        position: relative;
+        width: auto;
+        padding: 12px;
+        background: $navy1;
+
+        .back-button {
+          color: white;
+          margin: {
+            top: 0;
+            bottom: 8px;
+          }
+
+          .back-to-protocol {
+            padding: 0;
+            margin: 0;
+            color: $white;
+            font-size: 14px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+
+        h3 {
+          margin: 0;
+          color: white;
+
+          button {
+            padding: 0;
+            margin: 0;
+            color: white;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .notes-body {
+        position: relative;
+        height: calc(100% - 109px);
+        padding: 16px;
+        overflow-y: scroll;
+
+        div.notes-list {
+          margin-top: 0;
+
+          .note-task {
+            margin-bottom: 8px;
+            font-size: 13px;
+            color: $navy2;
+          }
+          .note-text {
+            margin-top: 0;
+            color: $navy1;
+            white-space: pre-line;
+          }
+
+          &:first-of-type {
+            .note-task {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

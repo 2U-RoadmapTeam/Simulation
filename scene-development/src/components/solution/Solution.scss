@@ -1,0 +1,120 @@
+@import 'styles/_styles.scss';
+@import 'styles/_colors.scss';
+
+li[aria-label="4x SDS sample bufferSolution"].Solution {
+    margin-left: -45px !important;
+}
+
+.Solution.buffer {
+    padding-top: 40px !important;
+    margin-top: -40px !important;
+    width: auto !important;
+}
+
+.Solution.vessel {
+    padding-top: 40px !important;
+    margin-top: -40px !important;
+}
+
+.Solution {
+  cursor: pointer;
+  padding: 0 !important;
+  width: 29px;
+
+  .move-menu {
+    position: absolute;
+    right: 50%;
+    bottom: calc(100% + 43px);
+    width: 40px;
+    transform: translate(50%, 0%);
+    z-index: -1;
+    pointer-events: initial;
+
+    .move-button {
+      display: inline-block;
+      background: $navy2;
+      border: 1px solid $navy1;
+      border-radius: 5px;
+      width: 41px;
+      height: 41px;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .label {
+  position: absolute;
+  bottom: 89px;
+  left: 40%;
+  transform: translateX(-50%) rotate(180deg);
+  font-family: $body;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 14px;
+  text-align: center;
+  margin: 0px;
+  padding: 4px 6px;
+  border-radius: 5px;
+  background-color: $navy2;
+  pointer-events: none;
+  color: white;
+  white-space: nowrap;
+  user-select: none;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+
+    &:after {
+      position: absolute;
+      top: calc(0% - 9px);
+      left: calc(50% - 10px);
+      transform: rotate(180deg);
+      width: 0px;
+      height: 0px;
+      content: "";
+      border-style: solid;
+      border-width: 10px 10px 0px;
+      border-color: $navy2 transparent transparent;
+    }
+
+    @supports (display:-ms-grid) {
+      &:after {
+        position: absolute;
+        bottom: calc(9px + 100%);
+        top: initial;
+        left: 50%;
+        transform: rotate(180deg);
+        width: 0px;
+        height: 0px;
+        content: "";
+        border-style: solid;
+        border-width: 10px 10px 0px;
+        border-color: $navy2 transparent transparent;
+      }
+    }
+  }
+
+  // &.open .label{
+  //   bottom: calc(100% - 5px);
+  // }
+}
+
+// .Solution.open {
+//   top: -3px;
+//   left: 2px;
+// }
+
+li[aria-label="Solution4x SDS sample buffer"]{
+  width: 43px;
+  margin-right: 10px !important;
+}
+
+.vesselRackImg{
+  position: absolute;
+  left:-12%;
+  z-index: 2;
+}
