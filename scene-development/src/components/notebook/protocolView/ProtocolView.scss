@@ -1,0 +1,208 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts';
+
+.protocol-view {
+
+  width: 100%;
+  background: $navy7;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 91px);
+  position: relative;
+
+  .protocol-head {
+    padding: 20px 20px 20px 55px;
+    background: $navy1;
+    width: auto;
+    position: relative;
+
+    h4 {
+      margin: 0;
+
+      .listIndex {
+        position: absolute;
+        left: 25px;
+        top: 26px;
+        font-size: 15px;
+        text-align: center;
+        color: $navy1;
+      }
+
+      button {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+
+      .protocol-title-btn {
+        font-family: $heading;
+        font-size: 42px;
+        line-height: 22px;
+        padding-top: 9px;
+      }
+
+      .protocol-notebook-btn {
+        font-size: 16px;
+        line-height: 32px;
+        float: right;
+      }
+
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: calc(50% - 22px);
+        background: #fff;
+        left: 29px;
+      }
+
+      &:before {
+        top: 0;
+      }
+
+      &:after {
+        top: calc(50% + 22px);
+      }
+    }
+  }
+
+  .protocol-progress-container {
+
+    position: relative;
+    padding: 16px;
+    border-bottom: 2px solid $navy4;
+
+    .progress-step {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+    }
+
+    .progress {
+      margin: 0 55px 0 0;
+      display: flex;
+      height: 16px;
+      overflow: hidden;
+      font-size: .75rem;
+      background-color: $navy5;
+      border-radius: .25rem;
+
+      .progress-bar {
+        top: -2px;
+        height: 20px;
+        background: $navy4;
+        position: relative;
+        cursor: pointer;
+
+        &.active {
+          background: $navy1;
+
+          &:after {
+            border-color: transparent transparent transparent $navy1;
+          }
+        }
+
+        &:before {
+          content: '';
+          width: 0;
+          height: 0;
+          right: -4px;
+          z-index: 2;
+          position: absolute;
+          border-style: solid;
+          border-width: 10px 0 10px 5px;
+          border-color: transparent transparent transparent white;
+        }
+        &:after {
+          content: '';
+          width: 0;
+          height: 0;
+          right: -3px;
+          z-index: 2;
+          position: absolute;
+          border-style: solid;
+          border-width: 10px 0 10px 5px;
+          border-color: transparent transparent transparent $navy4;
+        }
+      }
+    }
+
+    .section-instruction {
+      margin: 16px 0 0 0;
+      font-weight: bold;
+      color: $navy1;
+    }
+  }
+  .protocol-content {
+    height: 100%;
+    overflow-y: scroll;
+
+    .protocol-btns-container {
+
+      .indicator {
+        display: inline-block;
+        margin-top: 8px;
+        width: 42px;
+        height: 46px;
+        position: relative;
+        top: -1px;
+        z-index: 2;
+        cursor: pointer;
+
+        span {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 46px;
+          color: white;
+        }
+        svg {
+          position: absolute !important;
+          top: 0;
+          left: 0;
+          z-index: -1;
+        }
+      }
+
+      button.protocol-btn {
+        color: #14486d;
+        height: 44px;
+        width: 115px;
+        border: 1px solid #14486d;
+        border-radius: 6px;
+        font-size: 16px;
+        background: transparent;
+        cursor: pointer;
+
+        &:first-of-type {
+          margin-left: 16px;
+          margin-right: 31px;
+          margin-bottom: 16px;
+        }
+        &:last-of-type {
+          margin-right: 16px;
+          margin-left: 31px;
+          margin-bottom: 16px;
+        }
+        &.active {
+          background: $yellow1;
+          color: #333;
+          border: none;
+
+          svg {
+            color: #333 !important;
+          }
+        }
+
+      }
+    }
+
+    .hide {
+      visibility: hidden;
+    }
+  }
+}

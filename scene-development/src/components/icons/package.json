@@ -1,0 +1,7 @@
+{
+  "name": "@acme/react-icons",
+  "version": "1.0.1",
+  "peerDependencies": {
+    "react": ">=16.2.0"
+  }
+}

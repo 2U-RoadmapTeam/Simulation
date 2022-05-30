@@ -1,0 +1,128 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts';
+
+.card {
+  width: 100%;
+
+  .card-header {
+    position: relative;
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 0!important;
+    border-bottom: none;
+
+    h4 {
+      margin: 0;
+
+      &:before, &:after {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        left: 28.5px;
+        width: 1px;
+        height: calc(50% - 12px);
+        background: $navy1;
+      }
+
+      &:before {
+        top: 0;
+      }
+
+      &:after {
+        top: calc(50% + 12px);
+      }
+
+      .listIndex {
+        position: absolute;
+        display: none;
+        top: 22px;
+        left: 25px;
+        margin: 0;
+        color: $navy1;
+        font: {
+          family: $body;
+          style: normal;
+          size: 15px;
+          weight: 600;
+        };
+        line-height: normal;
+        text-align: center;
+      }
+
+      .btn-link {
+        padding: 0;
+        margin: {
+          left: 50px;
+          bottom: -9px;
+        };
+        color: $navy1;
+        font: {
+          family: $heading;
+          style: normal;
+          size: 32px;
+          weight: 700;
+        }
+        line-height: 41px;
+        letter-spacing: 1px;
+        border: none;
+        margin-left: 50px;
+        margin-bottom: -9px;
+        background: transparent;
+        cursor: pointer;
+      }
+    }
+
+    &.active {
+      color: white;
+      text-decoration: underline;
+      background-color: $navy1;
+
+      h4{
+        &:before, &:after {
+          background: white;
+        }
+
+        .listIndex {
+          display: initial;
+        }
+      }
+
+      .btn-link {
+        color: white;
+        cursor: pointer;
+      }
+
+      .arrow {
+        z-index: 99;
+        position: absolute;
+        top: calc(50% - 10px);
+        left: -10px;
+        width: 0;
+        height: 0;
+        border: {
+          top: 10px solid transparent;
+          right:10px solid $navy1;
+          bottom: 10px solid transparent;
+        }
+      }
+    }
+    &:hover{
+      text-decoration: underline;
+      }
+  }
+
+  .collapse-wrapper {
+    z-index: -1;
+    position: absolute;
+    top: 2px;
+    right: 383px;
+    width: 671px;
+  }
+}
+
+div.notebook-section.card:first-of-type .card-header h4:before {
+    content: none;
+}
+div.notebook-section.card:last-of-type .card-header h4:after {
+    content: none;
+}

@@ -1,0 +1,25 @@
+.notes-view{
+    width: 400px;
+    border: 2px solid red;
+    padding-left: 30px;
+}
+
+.notes-head{
+    width: fill;
+    height: 50px;
+    background-color: #14486d;
+}
+
+.back-protocol-btn {
+    color: #14486d;
+    height: 60px;
+    width: 150px;
+    border: 1px solid #14486d;
+    border-radius: 6px;
+    font-size: 24px;
+    margin: 20px;
+}
+
+.notes-container{
+    
+}
