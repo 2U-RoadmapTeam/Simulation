@@ -23,7 +23,6 @@ class Reflection extends Component {
             components: []
         }
     }
-
     componentDidMount(){
         this.doReduxPart(ReflectionData.Notebook.Content.Reflection)
         this.doCompPart(ReflectionData.Notebook.Content.Reflection)
@@ -62,7 +61,7 @@ class Reflection extends Component {
     setupComponentRedux = (data) => {
         switch (data.component) {
             case "MCQ":
-                this.props.createMCQ({
+                createMCQ({
                   id: data.props.id,
                   type: data.props.type,
                   choices: data.props.levels['l'+this.props.level].choices,
@@ -75,7 +74,7 @@ class Reflection extends Component {
                 break;
 
             case "SCQ":
-                this.props.createSCQ({
+                createSCQ({
                   id: data.props.id,
                   type: data.props.type,
                   choices: data.props.levels['l'+this.props.level].choices,
@@ -128,14 +127,15 @@ class Reflection extends Component {
     }
 }
 
-const mapStateToProps = (state) => {
-    return {
-      level: state.notebook.level
-    }
-  }
+// const mapStateToProps = (state) => {
+//     return {
+//       level: state.notebook.level
+//     }
+//   }
 
-  export default connect(mapStateToProps, {
-    createMCQ,
-    createSCQ,
-    //createDND,
-  })(Reflection)
+//   export default connect(mapStateToProps, {
+//     createMCQ,
+//     createSCQ,
+//     //createDND,
+//   })(Reflection)
+export default Reflection;

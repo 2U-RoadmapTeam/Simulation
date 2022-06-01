@@ -1,28 +1,27 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import FocusLock from "react-focus-lock";
-// import {
-//     notebookSection,
-//     notebookPopout,
-//     setTotalProtocolPages,
-//     toggleNotebookExpanded
-// } from '../../actions';
+import {
+    notebookSection,
+    notebookPopout,
+    setTotalProtocolPages,
+    toggleNotebookExpanded
+} from '../../actions';
 import NotebookSection from "./notebookSection/NotebookSection";
 import ProtocolView from "./protocolView/ProtocolView";
 import "./Notebook.scss";
-
 import NotebookIcon from "./img/notebook-icon.svg";
 import NotebookIconHover from "./img/notebook-icon-hover.svg";
 import NotebookIconCollapse from "./img/notebook-icon-collapse.svg";
 
-const sections = [
-  "Context",
-  "Materials",
+export const sections = [
+  "Introduction",
+  "Resources",
   "Predictions",
-  "Protocol",
-  "Results",
+  "Simulation",
+  "Review",
+  "Feedback",
   "Reflection",
-  "Summary",
 ];
 
 //This component coordinates all the Notebook logic and data flow
@@ -32,11 +31,16 @@ class Notebook extends Component {
 
     this.state = {
       notebookIconHover: false,
+      section: "Open"
     };
   }
 
   onSectionSelect = (section) => {
-    console.log(section);
+    this.setState({
+      section: section.section
+    })
+    this.props.setState(section.section)
+    // console.log(section)
     if (section.section !== "Protocol") {
       if (section.section === this.props.sectionSelected) {
         this.props.notebookPopout(!this.props.sliderOpen);
@@ -45,24 +49,24 @@ class Notebook extends Component {
           this.props.sectionSelected === false ||
           this.props.sectionSelected === null
         ) {
-          this.props.notebookPopout(!this.props.sliderOpen);
+          notebookPopout(!this.props.sliderOpen);
         }
       }
     } else if (section.section === "Protocol") {
       //Setting total pages in prep for rendering Protocol View
       if (this.props.taskPages.length > 0) {
-        this.props.setTotalProtocolPages(this.props.taskPages.length);
+        setTotalProtocolPages(this.props.taskPages.length);
       }
 
-      this.props.notebookPopout(false);
+      notebookPopout(false);
     }
     // Open the collapse
-    this.props.notebookSection(section);
+    notebookSection(section);
 
     // If the section is the currently open section
     if (section.section === this.props.sectionSelected) {
       // Close the collapse
-      this.props.notebookSection({ section: false });
+      notebookSection({ section: false });
     }
   };
 
@@ -88,7 +92,7 @@ class Notebook extends Component {
   };
 
   openSlider = () => {
-    // this.props.notebookPopout(!this.props.sliderOpen)
+    notebookPopout(!this.props.sliderOpen)
   };
 
   toggleExpanded = (e) => {
@@ -136,7 +140,7 @@ class Notebook extends Component {
             }}
           />
           <h6 tabIndex={-1} aria-label="Notebook" id="notebook-title">
-            Notebook
+            Notebook{this.state.section}
           </h6>
         </div>
         <div
@@ -146,12 +150,13 @@ class Notebook extends Component {
         ></div>
         <FocusLock
           disabled={
-            this.props.sectionSelected === "Protocol" || this.props.modalVisible
+            this.props.sectionSelected === "Simulation" || this.props.modalVisible
           }
         >
-          {this.props.sectionSelected === "Protocol"
+          {/* {this.state.section === "Simulation"
             ? this.renderProtocolView()
-            : this.renderSectionList()}
+            : this.renderSectionList()} */}
+            {this.renderSectionList()}
         </FocusLock>
       </div>
     );
@@ -169,9 +174,9 @@ class Notebook extends Component {
 // }
 
 // export default connect(mapStateToProps, {
-//     // notebookSection,
-//     // notebookPopout,
-//     // setTotalProtocolPages,
-//     // toggleNotebookExpanded
+//     notebookSection,
+//     notebookPopout,
+//     setTotalProtocolPages,
+//     toggleNotebookExpanded
 // })(Notebook);
 export default Notebook;

@@ -849,28 +849,30 @@ render() {
   }
 }
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    level: state.notebook.level,
-    type: state.gel.gels[0].type,
-    predictions: state.gel.gels[0].prediction,
-    PSCQ: state.PSCQ,
-    bandData: state.gel.gels[0].predictions46,
-    dropDownChoice: state.gel.gels[0].predictions46.dropDownChoice,
-    dropDownChoiceId: state.gel.gels[0].predictions46.dropDownChoiceId,
-    lanesVisible: state.gel.gels[0].predictions46.lanesVisible
-  };
-};
+// const mapStateToProps = (state, ownProps) => {
+//   return {
+//     level: state.notebook.level,
+//     type: state.gel.gels[0].type,
+//     predictions: state.gel.gels[0].prediction,
+//     PSCQ: state.PSCQ,
+//     bandData: state.gel.gels[0].predictions46,
+//     dropDownChoice: state.gel.gels[0].predictions46.dropDownChoice,
+//     dropDownChoiceId: state.gel.gels[0].predictions46.dropDownChoiceId,
+//     lanesVisible: state.gel.gels[0].predictions46.lanesVisible
+//   };
+// };
 
-export default connect(
-  mapStateToProps,
-  {
-    createPSCQ,
-    pushInteractions,
-    setGelPrediction,
-    setPredictionBandHeight,
-    setDropdownPrediction,
-    setPredictionLaneVisible,
-    setPredictionAllHeights
-  }
-)(Predictions);
+// export default connect(
+//   mapStateToProps,
+//   {
+//     createPSCQ,
+//     pushInteractions,
+//     setGelPrediction,
+//     setPredictionBandHeight,
+//     setDropdownPrediction,
+//     setPredictionLaneVisible,
+//     setPredictionAllHeights
+//   }
+// )(Predictions);
+
+export default Predictions;

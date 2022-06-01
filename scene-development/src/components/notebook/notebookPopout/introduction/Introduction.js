@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
-import "./Context.scss";
+import "./Introduction.scss";
 
 
 const videoLink = "https://www.youtube.com/embed/reYwbnuhFU0";
 
-class Context extends Component {
+class Introduction extends Component {
   	render() {
     	return (
-      		<div className="Context">
+      		<div className="Introduction">
         		<div>
             	<p className="description" tabIndex={0}>
 				Protein gel electrophoresis is a laboratory technique that separates proteins by mass. This technique is similar to running an agarose gel to separate and visualize different molecules of DNA. In contrast to DNA, protein samples are first boiled in a sample buffer containing SDS, which unfolds polypeptides and covers them with negative charges. After boiling, the samples are loaded on a polyacrylamide gel. An applied electrical current lets smaller proteins migrate further down the sieve-like gel and separates them from larger ones.
@@ -25,4 +25,4 @@ class Context extends Component {
   	}
 }
 
-export default Context;
+export default Introduction;

@@ -22,7 +22,7 @@ import SceneData from "../../../../data/scene.json";
 // import { default as Freezer } from "components/freezer/freezerMaterials";
 // import { default as HeatBlock } from 'components/heatBlock/Graphics'
 
-import "./Materials.scss";
+import "./Resources.scss";
 
 class Material extends Component {
 
