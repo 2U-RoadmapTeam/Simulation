@@ -10,7 +10,7 @@ import colors from '../../../styles/_colors.scss';
 import './NotebookSection.scss'
 
 // Icons
-import IconHexagon from '../../icons/hexagon-solid';
+import IconStar from '../../icons/star-solid';
 
 class NotebookSection extends Component {
     constructor(props) {
@@ -35,7 +35,7 @@ class NotebookSection extends Component {
                 <div tabIndex={-1}className={'card-header'+(this.props.focused?" active":"")}>
                     <div className="arrow"></div>
                     <h4 tabIndex={-1}className="incomplete" aria-label={this.props.text + 'heading'}>
-                      <IconHexagon
+                      <IconStar
                         style={{position: 'absolute', color: (this.props.focused)? 'white': colors.navy1, height: (this.props.focused)? '32px': '15px', top: (this.props.focused)? '15px': '24px', left: (this.props.focused)? '15px': '22px'}}
                       />
                       <p tabIndex={-1}className="listIndex">{this.props.index} </p>
@@ -53,7 +53,7 @@ class NotebookSection extends Component {
                       aria-hidden={!this.props.focused}
                       theme={{collapse: 'collapse', content: 'collapse-content'}}
                       springConfig={{stiffness: 500, damping: 30}}>
-                        {(this.props.focused)?<NotebookPopout onSelect={this.onSelect} index={this.props.index} section={this.props.text} tab={(this.props.focused)? null: -1}/>:null}
+                        {/* {(this.props.focused)?<NotebookPopout onSelect={this.onSelect} index={this.props.index} section={this.props.text} tab={(this.props.focused)? null: -1}/>:null} */}
                   </Collapse>
               </div>
             </div>

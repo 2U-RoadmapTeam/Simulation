@@ -13,11 +13,10 @@ import "./Notebook.scss";
 import NotebookIcon from "./img/notebook-icon.svg";
 import NotebookIconHover from "./img/notebook-icon-hover.svg";
 import NotebookIconCollapse from "./img/notebook-icon-collapse.svg";
-
+import IconStar from "../icons/star-solid"
 export const sections = [
   "Introduction",
   "Resources",
-  "Predictions",
   "Simulation",
   "Review",
   "Feedback",
@@ -113,16 +112,17 @@ class Notebook extends Component {
         <div id="notebook-head">
           <img
             src={
-              this.props.notebookExpanded
-                ? this.state.notebookIconHover
-                  ? NotebookIconHover
-                  : NotebookIcon
-                : NotebookIconCollapse
+              // this.props.notebookExpanded
+              //   ? this.state.notebookIconHover
+              //     ? NotebookIconHover
+              //     : NotebookIcon
+              //   : NotebookIconCollapse
+              NotebookIconCollapse
             }
             alt="Notebook display button. Select to show or hide the notebook."
             className="notebook-icon"
             onClick={(e) => {
-              this.toggleExpanded(e);
+              this.props.setStateOpenClose("close")
             }}
             onKeyDown={(e) => {
               if (e.keyCode === 13 || e.keyCode === 32) this.toggleExpanded(e);
@@ -140,7 +140,7 @@ class Notebook extends Component {
             }}
           />
           <h6 tabIndex={-1} aria-label="Notebook" id="notebook-title">
-            Notebook{this.state.section}
+            Notebook
           </h6>
         </div>
         <div
@@ -158,6 +158,7 @@ class Notebook extends Component {
             : this.renderSectionList()} */}
             {this.renderSectionList()}
         </FocusLock>
+        
       </div>
     );
   }

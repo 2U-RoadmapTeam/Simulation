@@ -1,5 +1,4 @@
-
-@import '../../styles/colors';
+@import "../../styles/colors";
 
 #notebook {
   z-index: 999;
@@ -10,27 +9,29 @@
   height: 100vh;
   border-left: 1px solid $navy1;
   background: white;
+  border-radius: 10px;
   //transition: all .3s;
 
   &.expanded {
-    right: 0; 
+    right: 0;
   }
 
   &.open:before {
-    content: '';
+    content: "";
     z-index: -1;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
   }
 
   #notebook-head {
     padding: 28px 30px 28px 67px;
-    background: $navy1;
-    background: $navy2;
+    // background: $navy1;
+    // background: $navy2;
+    background-color: #e51470;
 
     .notebook-icon {
       cursor: pointer;
@@ -39,20 +40,19 @@
       left: -48px;
       width: 96px;
       height: 100px;
-      filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
-      -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
+      filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+      -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
       cursor: pointer;
-
     }
 
     #notebook-title {
       margin: 0;
-      color: $navy6;
+      color: #1C3E6B;
       line-height: 14px;
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-size: 16px;
-      font-weight: lighter;
+      font-size: 22px;
+      font-weight: "NotoSans", sans-serif;
     }
     #notebook-sub-title {
       margin: 0;

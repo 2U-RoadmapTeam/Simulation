@@ -5,7 +5,7 @@ import Introduction from "./introduction/Introduction";
 import Materials from "./resources/Resources";
 // import Predictions from 'components/notebook/notebookPopout/predictions/Predictions';
 import Predictions210 from "./predictions/Predictions";
-import Results from "./results/Results";
+import Review from "./review/Review";
 import Summary210 from "./summary/Summary";
 import Reflection from "./reflection/Reflection";
 import Simulation from "./simulation/Simulation";
@@ -14,7 +14,6 @@ import "./NotebookPopout.scss";
 const sections = [
   "Introduction",
   "Resources",
-  "Predictions",
   "Simulation",
   "Review",
   "Feedback",
@@ -53,13 +52,21 @@ class NotebookPopout extends Component {
 
   //TODO: choose which to render based on Redux state
   nextSection = () => {
-    if (sections.indexOf(this.props.section) === sections.length - 1) {
-      window.close();
-    } else {
-      this.props.onSelect({
-        section: sections[sections.indexOf(this.props.section) + 1],
-      });
+    //   console.log("Hello")
+    let nextSection = sections.indexOf(this.props.sectionSelected) + 1;
+    if(this.props.sectionSelected === sections[sections.length-1]){
+        this.props.setState(sections[0]);
     }
+    else{
+        this.props.setState(sections[nextSection]);
+    }
+    // if (sections.indexOf(this.props.section) === sections.length - 1) {
+    //   window.close();
+    // } else {
+    //   this.props.onSelect({
+    //     section: sections[sections.indexOf(this.props.section) + 1],
+    //   });
+    // }
   };
 
   render() {
@@ -71,14 +78,11 @@ class NotebookPopout extends Component {
       case "Resources":
         body = <Materials />;
         break;
-      case "Predictions":
-        body = <Predictions210 />;
-        break;
       case "Simulation":
         body = <Simulation />;
         break;
       case "Review":
-        body = <Results />;
+        body = <Review />;
         break;
       case "Feedback":
         body = <Summary210 />;
@@ -113,12 +117,12 @@ class NotebookPopout extends Component {
             onClick={this.nextSection}
             className="popout-btn"
             aria-label={
-              sections.indexOf(this.props.section) === sections.length - 1
+              sections.indexOf(this.props.sectionSelected) === sections.length - 1
                 ? "End simulation button. Select to end the simulation."
                 : "Next button. Select to advance to the next section."
             }
           >
-            {sections.indexOf(this.props.section) === sections.length - 1
+            {sections.indexOf(this.props.sectionSelected) === sections.length - 1
               ? "End simulation"
               : "Next section"}
           </button>

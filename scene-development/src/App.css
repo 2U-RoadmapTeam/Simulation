@@ -32,3 +32,15 @@
   stroke-width: 5;
   opacity: 0.5;
 }
+.content{
+  width: 80%;
+}
+
+.iconOpen{
+  width: 100px;
+  height: 100px;
+  /* background-color: #3A71CE; */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}

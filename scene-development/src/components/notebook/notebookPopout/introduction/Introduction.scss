@@ -1,6 +1,11 @@
-@import '../../../../styles/colors';
-@import '../../../../styles/fonts';
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
 
+.IntroText {
+  width: 70%;
+  height: 600px;
+  margin: auto;
+}
 .Context {
   .description {
     line-height: 1.5;
@@ -11,7 +16,6 @@
     }
   }
   .Section {
-
     .SectionHeading {
       border-bottom: 1px solid $charcoal1;
     }
@@ -42,13 +46,13 @@
     }
 
     .Group {
-
       .Table {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         border-radius: 6px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background: $navy1;
         overflow: hidden;
 
