@@ -26,7 +26,7 @@
 }
 /* style={fill:red;stroke:black;stroke-width:5;opacity:0.5"} */
 
-.SVG{
+.SVG1{
   fill: red;
   stroke: black;
   stroke-width: 5;
@@ -43,4 +43,29 @@
   position: absolute;
   top: 0px;
   right: 0px;
+}
+
+@media only screen and (max-width: 412px) {
+  .SVG1{
+    width: 100px;
+    height: 100px;
+  }
+  .Comp1{
+    width: 100px;
+    height: 100px;
+  }
+  .SVG2{
+    cx: 50;
+    cy: 50;
+    r: 50;
+  }
+  .iconOpen{
+    width: 70px;
+    height: 70px;
+    right: -8px;
+    top: -1px;
+  }
+  .header{
+    font-size: 20px;
+  }
 }

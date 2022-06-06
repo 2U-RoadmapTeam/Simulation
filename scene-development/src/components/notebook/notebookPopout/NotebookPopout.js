@@ -104,6 +104,7 @@ class NotebookPopout extends Component {
                 this.props.sectionSelected +
                 " section heading."
               }
+              className="header"
             >
               {this.props.index + ". " + this.props.sectionSelected}
             </h2>

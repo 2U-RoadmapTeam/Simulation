@@ -8,7 +8,7 @@ const Square = () => {
         ry="20"
         width="150"
         height="150"
-        className="SVG"
+        className="SVG1"
       />
     </svg>
   );
@@ -16,7 +16,7 @@ const Square = () => {
 
 const Circle = () => {
   return (
-    <svg height="200" width="200" id="circle">
+    <svg height="200" width="200" className="circle">
       <circle
         cx="75"
         cy="75"
@@ -24,6 +24,7 @@ const Circle = () => {
         stroke="black"
         strokeWidth="3"
         fill="red"
+        className="SVG2"
       />
     </svg>
   );
