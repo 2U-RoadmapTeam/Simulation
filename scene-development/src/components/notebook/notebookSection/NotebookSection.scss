@@ -1,5 +1,5 @@
-@import '../../../styles/colors';
-@import '../../../styles/fonts';
+@import "../../../styles/colors";
+@import "../../../styles/fonts";
 
 .card {
   width: 100%;
@@ -8,29 +8,21 @@
     position: relative;
     width: 100%;
     padding: 16px 0;
-    border-radius: 0!important;
+    border-radius: 0 !important;
     border-bottom: none;
 
     h4 {
       margin: 0;
 
-      &:before, &:after {
-        content: '';
-        z-index: 1;
+      &:before,
+      &:after {
+        content: "";
         position: absolute;
         left: 28.5px;
         width: 1px;
-        height: calc(50% - 12px);
         background: $navy1;
       }
 
-      &:before {
-        top: 0;
-      }
-
-      &:after {
-        top: calc(50% + 12px);
-      }
 
       .listIndex {
         position: absolute;
@@ -44,7 +36,7 @@
           style: normal;
           size: 15px;
           weight: 600;
-        };
+        }
         line-height: normal;
         text-align: center;
       }
@@ -54,10 +46,10 @@
         margin: {
           left: 50px;
           bottom: -9px;
-        };
-        color: $navy1;
+        }
+        color: $black;
         font: {
-          family: $heading;
+          family: "Math";
           style: normal;
           size: 32px;
           weight: 700;
@@ -75,10 +67,11 @@
     &.active {
       color: white;
       text-decoration: underline;
-      background-color: $navy1;
+      background-color: pink;
 
-      h4{
-        &:before, &:after {
+      h4 {
+        &:before,
+        &:after {
           background: white;
         }
 
@@ -101,14 +94,14 @@
         height: 0;
         border: {
           top: 10px solid transparent;
-          right:10px solid $navy1;
+          right: 10px solid $navy1;
           bottom: 10px solid transparent;
         }
       }
     }
-    &:hover{
+    &:hover {
       text-decoration: underline;
-      }
+    }
   }
 
   .collapse-wrapper {
@@ -121,8 +114,8 @@
 }
 
 div.notebook-section.card:first-of-type .card-header h4:before {
-    content: none;
+  content: none;
 }
 div.notebook-section.card:last-of-type .card-header h4:after {
-    content: none;
+  content: none;
 }

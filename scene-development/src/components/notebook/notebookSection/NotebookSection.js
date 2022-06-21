@@ -29,15 +29,15 @@ class NotebookSection extends Component {
     }
 
     render() {
-
+      // console.log(this.props.focused ? "active" : "")
+      console.log(this.props.focused)
         return (
             <div tabIndex={-1} className="notebook-section card">
                 <div tabIndex={-1}className={'card-header'+(this.props.focused?" active":"")}>
-                    <div className="arrow"></div>
                     <h4 tabIndex={-1}className="incomplete" aria-label={this.props.text + 'heading'}>
-                      <IconStar
+                      {/* <IconStar
                         style={{position: 'absolute', color: (this.props.focused)? 'white': colors.navy1, height: (this.props.focused)? '32px': '15px', top: (this.props.focused)? '15px': '24px', left: (this.props.focused)? '15px': '22px'}}
-                      />
+                      /> */}
                       <p tabIndex={-1}className="listIndex">{this.props.index} </p>
                       <button aria-label= {this.props.text +" menu button. Select to enter the "+ this.props.text + ' menu pane.'}
                         className="btn btn-link" tabIndex={0} onClick={this.sectionClicked}>
@@ -61,18 +61,18 @@ class NotebookSection extends Component {
     }
 }
 
-// const mapStateToProps = (state, ownProps) => {
-//     return {
-//         text: ownProps.text,
-//         onSelect: ownProps.onSelect,
-//         focused: ownProps.focused,
-//         sliderOpen: state.notebook.sliderOpen,
-//         sectionSelected: state.notebook.sectionSelected
-//     }
-// }
+const mapStateToProps = (state, ownProps) => {
+    return {
+        text: ownProps.text,
+        onSelect: ownProps.onSelect,
+        focused: ownProps.focused ,
+        sliderOpen: state.notebook.sliderOpen,
+        sectionSelected: state.notebook.sectionSelected
+    }
+}
 
-// export default connect(mapStateToProps, {
+export default connect(mapStateToProps, {
 
-// })(NotebookSection);
+})(NotebookSection);
 
-export default NotebookSection;
+// export default NotebookSection;

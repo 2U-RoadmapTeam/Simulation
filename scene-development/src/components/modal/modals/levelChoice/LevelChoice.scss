@@ -1,0 +1,49 @@
+@import 'styles/_colors.scss';
+
+.level-choice {
+  padding: 32px !important;
+  height: auto !important;
+
+  .modal-header {
+    h2 {
+      margin: {
+        right: 0;
+        bottom: 8px !important;
+      }
+      text-transform: uppercase;
+      font-size: 31px !important;
+    }
+  }
+
+  .modal-footer.lvl-choice {
+    height: 60px;
+    margin-top: 32px !important;
+
+    .lvl-choice {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  .levelSelectBtn {
+      width: 346px;
+      height: 56px;
+      padding: 16px;
+      margin-top: 8px;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: left;
+      align-self: center;
+
+      &.active {
+        color: $white;
+        border: solid 1px $navy2;
+        background-color: $navy1;
+      }
+      &.inactive {
+        color: $navy1;
+        border: solid 1px $navy2;
+        background-color: $navy6;
+      }
+  }
+}

@@ -1,0 +1,21 @@
+@import 'styles/_styles.scss';
+@import 'styles/_colors.scss';
+
+#TubeStand {
+  padding: 0 !important;
+
+  margin-top: -50px !important;
+  padding-top: 50px !important;
+
+  .empty-tube-stand {
+    // z-index: 1;
+    // position: absolute;
+    // display: block;
+
+
+    img {
+      pointer-events: none;
+      width: 100%;
+    }
+  }
+}

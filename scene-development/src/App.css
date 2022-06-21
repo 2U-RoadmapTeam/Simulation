@@ -37,12 +37,12 @@
 }
 
 .iconOpen{
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   /* background-color: #3A71CE; */
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: 15px;
 }
 
 @media only screen and (max-width: 412px) {

@@ -1,0 +1,60 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="311" height="253.77" viewBox="0 0 311 253.77">
+  <defs>
+    <style>
+      .cls-1, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-4, .cls-5 {
+        fill: #7cb4d0;
+      }
+
+      .cls-2 {
+        opacity: 0.4;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill: #bcdeea;
+        opacity: 0.1;
+      }
+
+      .cls-4, .cls-7 {
+        opacity: 0.5;
+      }
+
+      .cls-5 {
+        opacity: 0.8;
+      }
+
+      .cls-6 {
+        fill: #3e6e7a;
+        opacity: 0.2;
+      }
+    </style>
+  </defs>
+  <title>Gel</title>
+  <path class="cls-1" d="M310.92,253.76V0H0V253.76Z"/>
+  <path class="cls-2" d="M301,244V10.75H12.77V244H301Z"/>
+  <path class="cls-3" d="M301,244V10.75H12.77V244H301Z"/>
+  <path class="cls-4" d="M301,10.74,310.92,0H0L12.77,10.74ZM12.77,244,0,253.77H310.92L301,244H12.77Z"/>
+  <path class="cls-2" d="M310.92,253.76V0H0V253.76Z"/>
+  <path class="cls-5" d="M12.87,244V10.75L0,0V253.76L12.87,244Z"/>
+  <path class="cls-6" d="M277.69,16V84.59H291.4V16Z"/>
+  <path class="cls-6" d="M275.4,20.57V82.3h13.72V20.57Z"/>
+  <path class="cls-6" d="M277.69,20.57V82.3h11.43V20.57H277.69Z"/>
+  <path class="cls-6" d="M289.12,20.58,291.4,16H277.69l-2.29,4.49ZM275.4,82.3l2.29,2.29H291.4l-2.29-2.29Z"/>
+  <path class="cls-7" d="M277.69,16l-2.29,4.57V82.3l2.29,2.29Z"/>
+  <path class="cls-6" d="M277.69,93.73v68.58H291.4V93.73Z"/>
+  <path class="cls-6" d="M275.4,98.3V160h13.72V98.3Z"/>
+  <path class="cls-6" d="M277.69,98.3V160h11.43V98.3H277.69Zm11.43,0,2.29-4.57H277.69l-2.29,4.49ZM275.4,160l2.29,2.28H291.4L289.12,160Z"/>
+  <path class="cls-7" d="M277.69,93.73,275.4,98.3V160l2.29,2.29Z"/>
+  <path class="cls-6" d="M277.69,171.46v68.59H291.4V171.46Z"/>
+  <path class="cls-6" d="M275.4,176v61.73h13.72V176Z"/>
+  <path class="cls-6" d="M277.69,176v61.73h11.43V176H277.69Z"/>
+  <path class="cls-6" d="M289.12,176l2.29-4.57H277.69L275.4,176ZM275.4,237.76l2.29,2.29H291.4l-2.29-2.29Z"/>
+  <path class="cls-7" d="M277.69,171.46,275.4,176v61.73l2.29,2.29Z"/>
+</svg>

@@ -14,13 +14,14 @@ import NotebookIcon from "./img/notebook-icon.svg";
 import NotebookIconHover from "./img/notebook-icon-hover.svg";
 import NotebookIconCollapse from "./img/notebook-icon-collapse.svg";
 import IconStar from "../icons/star-solid"
+import image1 from "./img/cancel-close-cross-navigation-menu-512.webp"
 export const sections = [
   "Introduction",
-  "Resources",
+  "Important Resources",
   "Simulation",
-  "Review",
-  "Feedback",
-  "Reflection",
+  "Feedback and Results",
+  "Test Your Knowledge",
+  "Results",
 ];
 
 //This component coordinates all the Notebook logic and data flow
@@ -33,8 +34,8 @@ class Notebook extends Component {
       section: "Open"
     };
   }
-
   onSectionSelect = (section) => {
+    // console.log(section.section)
     this.setState({
       section: section.section
     })
@@ -48,24 +49,24 @@ class Notebook extends Component {
           this.props.sectionSelected === false ||
           this.props.sectionSelected === null
         ) {
-          notebookPopout(!this.props.sliderOpen);
+          // notebookPopout(!this.props.sliderOpen);
         }
       }
     } else if (section.section === "Protocol") {
       //Setting total pages in prep for rendering Protocol View
       if (this.props.taskPages.length > 0) {
-        setTotalProtocolPages(this.props.taskPages.length);
+        this.props.setTotalProtocolPages(this.props.taskPages.length);
       }
 
-      notebookPopout(false);
+      this.props.notebookPopout(false);
     }
     // Open the collapse
-    notebookSection(section);
+    this.props.notebookSection(section);
 
     // If the section is the currently open section
     if (section.section === this.props.sectionSelected) {
       // Close the collapse
-      notebookSection({ section: false });
+      this.props.notebookSection({ section: false });
     }
   };
 
@@ -103,22 +104,10 @@ class Notebook extends Component {
       <div
         id="notebook"
         tabIndex={-1}
-        className={
-          (this.props.sliderOpen ? "open" : "closed") +
-          " " +
-          (this.props.notebookExpanded ? "expanded" : "")
-        }
       >
         <div id="notebook-head">
           <img
-            src={
-              // this.props.notebookExpanded
-              //   ? this.state.notebookIconHover
-              //     ? NotebookIconHover
-              //     : NotebookIcon
-              //   : NotebookIconCollapse
-              NotebookIconCollapse
-            }
+            src={image1}
             alt="Notebook display button. Select to show or hide the notebook."
             className="notebook-icon"
             onClick={(e) => {
@@ -140,7 +129,7 @@ class Notebook extends Component {
             }}
           />
           <h6 tabIndex={-1} aria-label="Notebook" id="notebook-title">
-            Notebook
+            2U
           </h6>
         </div>
         <div
@@ -164,20 +153,20 @@ class Notebook extends Component {
   }
 }
 
-// const mapStateToProps = (state, ownProps) => {
-//     return {
-//         sectionSelected: state.notebook.sectionSelected,
-//         sliderOpen: state.notebook.sliderOpen,
-//         taskPages: state.notebook.taskPages,
-//         modalVisible: state.modal.display,
-//         notebookExpanded: state.scene.notebookExpanded,
-//     }
-// }
+const mapStateToProps = (state, ownProps) => {
+    return {
+        sectionSelected: state.notebook.sectionSelected,
+        sliderOpen: state.notebook.sliderOpen,
+        taskPages: state.notebook.taskPages,
+        modalVisible: state.modal.display,
+        // notebookExpanded: state.scene.notebookExpanded,
+    }
+}
 
-// export default connect(mapStateToProps, {
-//     notebookSection,
-//     notebookPopout,
-//     setTotalProtocolPages,
-//     toggleNotebookExpanded
-// })(Notebook);
-export default Notebook;
+export default connect(mapStateToProps, {
+    notebookSection,
+    notebookPopout,
+    setTotalProtocolPages,
+    toggleNotebookExpanded
+})(Notebook);
+// export default Notebook;

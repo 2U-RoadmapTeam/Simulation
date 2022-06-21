@@ -6,19 +6,22 @@ import Materials from "./resources/Resources";
 // import Predictions from 'components/notebook/notebookPopout/predictions/Predictions';
 import Predictions210 from "./predictions/Predictions";
 import Review from "./review/Review";
-import Summary210 from "./summary/Summary";
+import Summary210 from "./summary/Summary210";
 import Reflection from "./reflection/Reflection";
-import Simulation from "./simulation/Simulation";
+import Simulation from "./predictions/Predictions";
+import { Provider } from "react-redux";
 import "./NotebookPopout.scss";
+import Predictions from "./predictions/Predictions";
 
 const sections = [
   "Introduction",
-  "Resources",
+  "Important Resources",
   "Simulation",
-  "Review",
-  "Feedback",
-  "Reflection",
+  "Feedback and Results",
+  "Test Your Knowledge",
+  "Results",
 ];
+
 
 class NotebookPopout extends Component {
   constructor(props) {
@@ -54,11 +57,10 @@ class NotebookPopout extends Component {
   nextSection = () => {
     //   console.log("Hello")
     let nextSection = sections.indexOf(this.props.sectionSelected) + 1;
-    if(this.props.sectionSelected === sections[sections.length-1]){
-        this.props.setState(sections[0]);
-    }
-    else{
-        this.props.setState(sections[nextSection]);
+    if (this.props.sectionSelected === sections[sections.length - 1]) {
+      this.props.setState(sections[0]);
+    } else {
+      this.props.setState(sections[nextSection]);
     }
     // if (sections.indexOf(this.props.section) === sections.length - 1) {
     //   window.close();
@@ -75,19 +77,19 @@ class NotebookPopout extends Component {
       case "Introduction":
         body = <Introduction />;
         break;
-      case "Resources":
+      case "Important Resources":
         body = <Materials />;
         break;
       case "Simulation":
         body = <Simulation />;
         break;
-      case "Review":
+      case "Feedback and Results":
         body = <Review />;
         break;
-      case "Feedback":
+      case "Test Your Knowledge":
         body = <Summary210 />;
         break;
-      case "Reflection":
+      case "Results":
         body = <Reflection />;
         break;
       default:
@@ -118,12 +120,14 @@ class NotebookPopout extends Component {
             onClick={this.nextSection}
             className="popout-btn"
             aria-label={
-              sections.indexOf(this.props.sectionSelected) === sections.length - 1
+              sections.indexOf(this.props.sectionSelected) ===
+              sections.length - 1
                 ? "End simulation button. Select to end the simulation."
                 : "Next button. Select to advance to the next section."
             }
           >
-            {sections.indexOf(this.props.sectionSelected) === sections.length - 1
+            {sections.indexOf(this.props.sectionSelected) ===
+            sections.length - 1
               ? "End simulation"
               : "Next section"}
           </button>
@@ -133,15 +137,14 @@ class NotebookPopout extends Component {
   }
 }
 
-// const mapStateToProps = (state, ownProps) => {
-//     return {
-//         index: ownProps.index,
-//         sectionSelected: state.notebook.sectionSelected,
-//         onSelect: ownProps.onSelect,
-//     }
-// }
+const mapStateToProps = (state, ownProps) => {
+  return {
+    index: ownProps.index,
+    // sectionSelected: state.notebook.sectionSelected,
+    onSelect: ownProps.onSelect,
+  };
+};
 
-// export default connect(mapStateToProps, {
-// })(NotebookPopout);
+export default connect(mapStateToProps, {})(NotebookPopout);
 
-export default NotebookPopout;
+// export default NotebookPopout;

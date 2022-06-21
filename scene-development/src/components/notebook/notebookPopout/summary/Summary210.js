@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import IconHexagon from "components/icons/hexagon-solid";
+import IconHexagon from "../../../icons/hexagon-solid";
 
 import "./Summary.scss";
 import colors from "../../../../styles/_colors.scss";
@@ -30,63 +30,6 @@ class Summary extends Component {
             aliquet bibendum enim facilisis gravida. Pulvinar elementum integer
             enim neque volutpat ac.
           </p>
-          <div className="learning-objectives">
-            <h5 tabIndex={0}>
-              In this simulation, you learned how to ligate DNA fragments from a
-              restriction digest using DNA ligase. You should be able to predict
-              possible recombinant plasmids that can occur during the ligation
-              process. The simulation explored how to:{" "}
-            </h5>
-            <ul>
-              <li>
-                <div className="index">
-                  <IconHexagon
-                    style={{
-                      color: this.props.current
-                        ? "white"
-                        : this.props.complete
-                        ? colors.navy3
-                        : colors.navy1,
-                      height: "18px",
-                    }}
-                  />
-                </div>
-                <span tabIndex={0}>Model different recombinant plasmids.</span>
-              </li>
-              <li>
-                <div className="index">
-                  <IconHexagon
-                    style={{
-                      color: this.props.current
-                        ? "white"
-                        : this.props.complete
-                        ? colors.navy3
-                        : colors.navy1,
-                      height: "18px",
-                    }}
-                  />
-                </div>
-                <span tabIndex={0}>Inactivate restriction enzymes.</span>
-              </li>
-              <li>
-                <div className="index">
-                  <IconHexagon
-                    style={{
-                      color: this.props.current
-                        ? "white"
-                        : this.props.complete
-                        ? colors.navy3
-                        : colors.navy1,
-                      height: "18px",
-                    }}
-                  />
-                </div>
-                <span tabIndex={0}>
-                  Prepare and incubate a ligation solution.
-                </span>
-              </li>
-            </ul>
-          </div>
           <div className="tips">
             <h5 tabIndex={0}>Takeaway messages</h5>
             <ul>

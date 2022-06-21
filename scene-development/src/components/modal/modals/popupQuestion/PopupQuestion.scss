@@ -1,0 +1,42 @@
+@import 'styles/_styles.scss';
+@import 'styles/_colors.scss';
+
+.popupQuestionModal {
+
+  .modal-header {
+    display: flex;
+
+    h2 {
+      margin-left: 10px !important;
+      margin-top: 10px !important;
+    }
+    img {
+    }
+  }
+  .modal-body {
+    margin: 10px;
+
+    .modal-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow-y: scroll;
+      background: linear-gradient(180deg, #014C91 0%, #003257 100%);
+
+      .popup-modal-content {
+        margin: -32px auto;
+        height: 100%;
+
+        .popupQuestion {
+          background: transparent;
+          border: none;
+          padding: 0;
+
+          p, label {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

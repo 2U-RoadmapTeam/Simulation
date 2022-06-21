@@ -1,0 +1,67 @@
+@import 'styles/_colors.scss';
+
+.remove-tubes {
+  padding: 15px !important;
+
+  .modal-header {
+    h2 {
+      margin: {
+        right: 0px !important;
+        bottom: 8px !important;
+      }
+      text-transform: capitalize !important;
+      font-size: 20px !important;
+    }
+  }
+
+  .modal-footer.lvl-choice {
+    height: 60px;
+    margin-top: 32px !important;
+
+    .lvl-choice {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  .levelSelectBtn {
+    width: 346px;
+    height: 56px;
+    padding: 16px;
+    margin-top: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+    align-self: center;
+
+      &.active {
+        color: $white;
+        border: solid 1px $navy2;
+        background-color: $navy1;
+          
+      }
+      &.inactive {
+        color: $navy1;
+        border: solid 1px $navy2;
+        background-color: $navy6;
+          
+      }
+  }
+}
+
+.modal-inner {
+  .image {
+    display: block;
+    margin: 18% auto;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.warning {
+  padding-right: 15px;
+}

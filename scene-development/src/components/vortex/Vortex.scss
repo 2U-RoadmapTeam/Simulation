@@ -1,0 +1,92 @@
+@import 'styles/_styles.scss';
+@import 'styles/_colors.scss';
+
+
+
+.square {
+    height: 50px;
+    width: 50px;
+    // background-color: #555;
+  }
+
+  #tubeInVortex {
+    position: absolute;
+    left: 30px;
+}
+
+#tubeInVortex2 {
+  position: absolute;
+  left: 60px;
+}
+
+#Vortex {
+  padding-top: 70px;
+  margin-top: -70px;
+
+  .dropTarget{
+    z-index: 0;
+    padding: 11px 17px;
+  }
+
+  .label {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $body;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 14px;
+    text-align: center;
+    margin: 0px;
+    padding: 4px 6px;
+    border-radius: 5px;
+    background-color: $navy2;
+    pointer-events: none;
+    color: white;
+    white-space: nowrap;
+    user-select: none;
+
+    &:after {
+      position: absolute;
+      top: calc(100% - 1px);
+      left: calc(50% - 10px);
+      width: 0px;
+      height: 0px;
+      content: "";
+      border-style: solid;
+      border-width: 10px 10px 0px;
+      border-color: $navy2 transparent transparent;
+    }
+  }
+}
+
+#Vortex.active {
+  animation: shake 0.25s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+
+  .label {
+    bottom: calc(100% - 60px);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  10%, 90% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-6px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(6px, 0, 0);
+  }
+}

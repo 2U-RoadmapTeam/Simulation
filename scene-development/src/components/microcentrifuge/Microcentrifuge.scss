@@ -1,0 +1,111 @@
+@import 'styles/_styles.scss';
+@import 'styles/_colors.scss';
+
+.Materials {
+
+  div[aria-label="Microcentrifuge"]{
+    .material-card-top {
+      position: relative;
+
+      div img{
+        position: absolute;
+        height: 120%;
+        width: auto;
+        left: 50%;
+        bottom: 8px;
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+}
+
+.element-stack {
+  z-index: 1;
+  position: absolute;
+}
+
+#Microcentrifuge {
+
+  img {
+    pointer-events: none;
+  }
+
+  .label {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $body;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 14px;
+    text-align: center;
+    margin: 0px;
+    padding: 4px 6px;
+    border-radius: 5px;
+    background-color: $navy2;
+    pointer-events: none;
+    color: white;
+    white-space: nowrap;
+    user-select: none;
+  }
+
+  &:after {
+    position: absolute;
+    top: calc(100% - 157px);
+    left: calc(50% - 10px);
+    width: 0px;
+    height: 0px;
+    content: "";
+    border-style: solid;
+    border-width: 10px 10px 0px;
+    border-color: $navy2 transparent transparent;
+  }
+}
+
+.microcentrifuge-empty {
+  top: -59px;
+  &:after {
+    top: calc(100% - 216px) !important;
+  }
+}
+
+.micro-top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-height: 105px;
+  cursor: pointer;
+}
+
+.micro-controls {
+  z-index: 1;
+  position: absolute;
+  top: 83px;
+  left: 30px;
+  width: 55px;
+  height: 43px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.micro-bottom {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  left: 0;
+  height: 78px;
+  cursor: pointer;
+}
+
+.tube-dropzone {
+  position: absolute;
+  top: 66px;
+  left: 7px;
+  width: calc(100% - 16px);
+  height: 37px;
+  border-radius: 50%;
+  border: 1px solid #F60;
+}

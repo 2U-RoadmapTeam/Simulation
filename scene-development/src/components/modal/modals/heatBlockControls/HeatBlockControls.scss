@@ -1,0 +1,198 @@
+@import 'styles/_colors.scss';
+
+.modal-inner {
+  padding: 32px;
+  width: calc(100% - 64px);
+  height: calc(100% - 64px);
+
+  .heat-block-content {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+
+    .heat-block {
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .heat-block-values {
+      width: 84%;
+      left: 50.4%;
+      top: 14%;
+      position: absolute;
+      transform: translate(-50%, 0%);
+      display: flex;
+      flex-direction: row;
+
+      p {
+        color: white;
+      }
+
+      .display-one {
+        display: inline-block;
+        width: 50%;
+        position: relative;
+
+        p {
+          font-size: 3.5vw;
+          margin: 0 5%;
+          width: 68%;
+          text-align: center;
+          line-height: 200%;
+        }
+      }
+
+      .display-two {
+        display: inline-block;
+        width: 50%;
+        margin-left: 7%;
+
+        p {
+          font-size: 3.5vw;
+          margin: 0 5%;
+          width: 68%;
+          text-align: center;
+          line-height: 200%;
+        }
+      }
+    }
+  }
+
+  .heat-block-controls {
+    width: calc(100% - 64px);
+    height: calc(calc(100vw - 617px) * 0.3453299492);
+    top: 33%;
+    transform: translate(0, -50%);
+    left: 32px;
+    position: absolute;
+
+    button {
+      img {
+        pointer-events: none;
+      }
+    }
+
+    button:disabled {
+      img {
+        opacity: 0.5;
+      }
+    }
+
+    .time-control {
+      position: absolute;
+      top: 43%;
+      left: 84.5%;
+      width: 8%;
+      height: auto;
+
+      button {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        background: transparent;
+        border: none;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .temp-control {
+      position: absolute;
+      top: 43%;
+      left: 39.5%;
+      width: 8%;
+      height: auto;
+
+      button {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        background: transparent;
+        border: none;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .start-control {
+      position: absolute;
+      top: 102%;
+      left: 37%;
+      width: 29.5%;
+      height: auto;
+
+      button {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        background: transparent;
+        border: none;
+
+        &:first-of-type {
+          width: 90%
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+// @media(min-width: 1411px){
+//   .heat-block-controls {
+//     height: calc(calc(1411px - 617px) * 0.3453299492) !important;
+//   }
+// }
+//
+// @media(min-width: 1659px){
+//   .main-display{
+//     p {
+//       font-size: 2.2vw !important;
+//     }
+//   }
+//   .sub-display{
+//     p {
+//       font-size: 0.9vw !important;
+//     }
+//   }
+// }
+//
+// @media(min-width: 1800px){
+//   .main-display{
+//     p {
+//       font-size: 1.9vw !important;
+//     }
+//   }
+//   .sub-display{
+//     p {
+//       font-size: 0.8vw !important;
+//     }
+//   }
+// }
+//
+// // ----------------------------------------
+//
+// @media(max-width: 1200px){
+//   .sub-display{
+//     p {
+//       font-size: 0.75vw !important;
+//     }
+//   }
+// }

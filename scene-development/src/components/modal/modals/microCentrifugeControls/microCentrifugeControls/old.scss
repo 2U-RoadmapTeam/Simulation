@@ -1,0 +1,293 @@
+@import '../styles/_styles.scss';
+@import '../styles/_colors.scss';
+@import '../styles/_mixins.scss';
+
+.microcentrifuge-controls-display {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: -25%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.modal-body {
+    overflow: hidden;
+    .centrifuge-modal-inner {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        width: calc(100% - 0px);
+        height: calc(calc(100vw - -709px) * 0.3453299492);
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
+}
+
+.modal-inner-controls-wrap {
+    position: absolute;
+    transform: translate(0%, 0%);
+    .controls {
+        position: relative;
+        transform: translate(0%, 0%);
+    }
+}
+
+.controls {
+    z-index: 1;
+    position: relative;
+    right: 0;
+    left: 0;
+    width: calc(100% - 45%);
+    height: calc(calc(100vw - 50%) * 0.3453299492);
+    margin: calc(calc(100% - 76.5%)) auto;
+    transform: translate(0%, 0%);
+    &__rpm {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: 6.15pc;
+        margin-bottom: 15px;
+        &--value {
+            display: flex;
+            align-items: center;
+            width: 80%;
+            padding: 17px;
+            font-family: $heading;
+            font-size: 400%;
+            color: $white;
+            overflow: hidden;
+        }
+        &--btns {
+            width: 10%;
+        }
+    }
+    &__settime {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        &--display {
+            width: 56%;
+            height: 8vh;
+            @include flex-center;
+        }
+        &--btns {
+            position: relative;
+            top: 0px;
+        }
+        &--remaining {
+            position: relative;
+            top: 22px;
+            left: 15px;
+            width: 42%;
+            font-family: $heading;
+            color: $white;
+            &-label {
+                font-size: 100%;
+            }
+            &-clock {
+                font-size: 300%;
+            }
+        }
+    }
+}
+
+.set-time {
+    width: 85%;
+    padding: 15px;
+    font-family: $heading;
+    color: $white;
+    margin-top: 11%;
+    &__label {
+        font-size: 100%;
+    }
+    &__value {
+        font-size: 300%;
+    }
+}
+
+.rpm-btn-inc {
+    position: absolute;
+    top: 1%;
+    right: -10.5%;
+    width: 20.5%;
+    height: 103%;
+    overflow: hidden;
+    &__inc {
+        position: relative;
+        top: 1px;
+        width: 50%;
+        height: 25%;
+        padding: 0;
+        border: none;
+        background: transparent;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.rpm-btn-dec {
+    position: absolute;
+    top: 26.4%;
+    right: -10.5%;
+    width: 20.5%;
+    overflow: hidden;
+    &__dec {
+        width: 50%;
+        height: 23.5%;
+        padding: 0;
+        border: none;
+        background: transparent;
+        overflow: hidden;
+        img {
+            position: relative;
+            top: -47px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.btn {
+    &__inc {
+        width: 100%;
+        height: 10.5vh;
+        @include btn_transparency;
+        &--wrap {
+            height: 10vh;
+            overflow: hidden;
+            img {
+                position: absolute;
+                top: 0pc;
+                right: 0px;
+                width: 10%;
+            }
+        }
+    }
+    &__dec {
+        position: relative;
+        top: -60px;
+        width: 100%;
+        height: 4.2vh;
+        @include btn_transparency;
+        overflow: hidden;
+        img {
+            position: relative;
+            top: -51px;
+            right: 0;
+            left: -7px;
+            width: 150%;
+            height: 9.8vh;
+            overflow: hidden;
+            border: none;
+            outline: none;
+        }
+    }
+    &__time-inc {
+        position: relative;
+        top: 16px;
+        width: 100%;
+        height: 50%;
+        @include btn_transparency;
+        overflow: hidden;
+        img {
+            position: relative;
+            top: 53px;
+            width: 100%;
+            height: 10vh;
+            border: none;
+            outline: none;
+        }
+    }
+    &__time-dec {
+        position: relative;
+        top: 16px !important;
+        left: 1px;
+        @include btn_transparency;
+        overflow: hidden;
+        img {
+            position: relative;
+            top: -51px;
+            height: 10vh;
+            border: none;
+            outline: none;
+        }
+    }
+    &__pulse {
+        @include btn_transparency;
+        img {
+            position: absolute;
+            top: 12pc;
+            left: 0px;
+            width: 49%;
+        }
+    }
+    &__start {
+        @include btn_transparency;
+        img {
+            position: absolute;
+            top: 12pc;
+            right: 0px;
+            width: 49%;
+        }
+    }
+    &--margin {
+        position: absolute;
+        bottom: 70%;
+        width: 100%;
+    }
+}
+
+.btn__inc,
+.btn__dec,
+.btn__time-inc,
+.btn__time-dec {
+    cursor: pointer;
+}
+
+
+// Media queries
+@media (min-width: 1411px) {
+    .microcentrifuge-controls-display {
+        top: -25%;
+    }
+    .control {
+        &__pulse {
+            left: -108px;
+        }
+        &__start {
+            right: -108px;
+        }
+    }
+
+    .modal-body {
+        .centrifuge-modal-inner {
+            height: calc(calc(1411px - -704px) * 0.3453299492) !important;
+        }
+    }
+
+    .btn {
+        &__time-dec {
+            height: 50%;
+        }
+        &__time-dec img {
+            top: -50px;
+        }
+    }
+
+    .controls {
+        &__top {
+            &--rpm-screen {
+                top: -4px;
+                height: 5.2pc;
+            }
+        }
+    }
+
+}

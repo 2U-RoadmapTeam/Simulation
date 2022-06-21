@@ -1,0 +1,36 @@
+@import 'styles/_styles.scss';
+@import 'styles/_colors.scss';
+
+.removeCombModal {
+
+  .modal-header {
+    display: flex;
+
+    h4 {
+      margin-left: 10px !important;
+      margin-right: 30px !important;
+      margin-top: 10px !important;
+    }
+    img {
+      height: 72px;
+    }
+  }
+  .modal-body {
+    margin: 10px;
+
+    .modal-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      img {
+        height: 90%;
+        width: auto;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

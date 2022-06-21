@@ -1,0 +1,162 @@
+@import 'styles/_styles.scss';
+@import 'styles/_colors.scss';
+
+.modal-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .volume-modal-content {
+    margin: -32px auto;
+    height: calc(100% + 64px);
+    max-width: 472px;
+
+    .volume-indicator {
+      display: inline-block;
+      margin-left: 80px;
+      width: 120px;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+
+      .volume-amount {
+        display: none; // temporarily set to hide for now.
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        text-align: center;
+        z-index: 1;
+      }
+
+      .graphics-P2, .graphics-P20, .graphics-P200, .graphics-P1000 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform: translate(0, -77px);
+
+        img {
+          width: 83%;
+          margin-left: 10%;
+          height: auto;
+          position: relative;
+
+          &.plunger {
+            position: absolute;
+            width: 60%;
+            margin: 0 20%;
+          }
+          &.pipette {
+          }
+        }
+      }
+    }
+
+    .controls {
+      vertical-align: middle;
+      display: inline-block;
+      position: relative;
+      max-width: 232px;
+      max-height: 232px;
+      height: 0;
+      width: calc(100% - 240px);
+      padding-bottom: calc(100% - 240px);
+      bottom: 50%;
+      margin-left: 40px;
+
+      .volume-wheel {
+        position: absolute;
+        z-index: 1;
+        background: red;
+        width: 90px;
+        left: 50%;
+        top: 30%;
+        height: 23px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        overflow: hidden;
+        cursor: pointer;
+
+        div {
+          position: absolute;
+
+          img {
+            pointer-events: none;
+            height: 23px;
+          }
+        }
+      }
+
+      .volume-control {
+        position: absolute;
+        top: 50%;
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        z-index: 1;
+        border: none;
+        background-color: $yellow1;
+        font-size: 48px;
+        cursor: pointer;
+
+        &:first-of-type {
+          left: 0;
+          transform: translate(-50%, -50%);
+        }
+        &:last-of-type {
+          right: 0;
+          transform: translate(50%, -50%);
+        }
+
+        p {
+          margin: 0;
+          line-height: 72px;
+          padding: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .center-graphic {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        position: absolute;
+        overflow: hidden;
+        border: solid 7px $yellow1;
+        background-color: $navy1;
+
+        .graphics-P2, .graphics-P20, .graphics-P200, .graphics-P1000 {
+          width: 68%;
+          margin: 0 16%;
+          height: auto;
+          position: relative;
+          transform: translate(0, 3.5%);
+
+          img {
+            width: 83%;
+            margin-left: 10%;
+            height: auto;
+            position: relative;
+
+            &.plunger {
+              position: absolute;
+              width: 60%;
+              margin: 0 20%;
+            }
+            &.pipette {
+            }
+          }
+        }
+      }
+    }
+  }
+}

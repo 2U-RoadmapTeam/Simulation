@@ -1,0 +1,351 @@
+@import 'styles/_colors.scss';
+
+.modal-inner {
+  padding: 32px;
+  width: calc(100% - 64px);
+  height: calc(100% - 64px);
+
+  .power-supply-content {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+
+    .power-supply{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      img {
+        width: auto;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        max-width: 100%;
+      }
+    }
+    .power-supply-values{
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+
+      p {
+        color: white;
+      }
+
+      .main-display {
+        display: inline-block;
+        width: 90px;
+        position: relative;
+        height: 60px;
+        top: 50px;
+        left: 120px;
+
+        .voltage {
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 60px;
+          font-size: 24px;
+          margin: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+      .sub-display {
+        display: inline-block;
+        width: 70px;
+        margin: 0;
+        height: 60px;
+        position: relative;
+        top: 40px;
+        left: 130px;
+
+        p {
+          font-size: 8px;
+          margin: 0 0 4px 0;
+        }
+
+        .time-abrv {
+          margin-left: calc(100% - 74.7%);
+        }
+      }
+    }
+    .gel {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
+  .power-supply-controls{
+    width: calc(100% - 64px);
+    height: calc(100% - 64px);
+    top: 32px;
+    left: 32px;
+    position: absolute;
+
+    button {
+      img {
+        pointer-events: none;
+      }
+    }
+    button:disabled{
+      img {
+        opacity: 0.5;
+      }
+    }
+
+    .time-control {
+      position: absolute;
+      top: 140px;
+      left: 32px;
+      width: 80px;
+      height: auto;
+
+      button {
+        cursor: pointer;
+        width: 50%;
+        height: 100%;
+        padding: 0;
+        background: transparent;
+        border: none;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .amp-control {
+      position: absolute;
+      top: 140px;
+      left: 125px;
+      width: 80px;
+      height: auto;
+
+      button {
+        cursor: pointer;
+        width: 50%;
+        height: 100%;
+        padding: 0;
+        background: transparent;
+        border: none;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .watt-control {
+      position: absolute;
+      top: 140px;
+      left: 216px;
+      width: 80px;
+      height: auto;
+
+      button {
+        cursor: pointer;
+        width: 50%;
+        height: 100%;
+        padding: 0;
+        background: transparent;
+        border: none;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .voltage-control {
+      position: absolute;
+      top: 140px;
+      left: 306px;
+      width: 80px;
+      height: auto;
+
+      button {
+        cursor: pointer;
+        width: 50%;
+        height: 100%;
+        padding: 0;
+        background: transparent;
+        border: none;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .power-control {
+      position: absolute;
+      top: 36px;
+      left: 37px;
+      width: 62px;
+      height: auto;
+
+      button {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        background: transparent;
+        border: none;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .start-control {
+      position: absolute;
+      top: 40px;
+      left: 320px;
+      width: 65px;
+      height: auto;
+
+      button {
+        cursor: pointer;
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        background: transparent;
+        border: none;
+
+        &:first-of-type{
+          width: 80%
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+// @media(min-width: 1411px){
+//   .power-supply-controls {
+//     height: calc(calc(1411px - 617px) * 0.3453299492) !important;
+//   }
+//
+//   .power-supply-values {
+//     height: calc(calc(1411px - 617px) * 0.3453299492) !important;
+//     .sub-display {
+//       .time-abrv {
+//         margin-left: calc(100% - 74.7%);
+//       }
+//     }
+//   }
+// }
+//
+// // @media(min-width: 1659px){
+// //
+// //   .power-supply-content {
+// //     .main-display{
+// //       p {
+// //         font-size: 2.2vw !important;
+// //       }
+// //     }
+// //     .sub-display{
+// //       p {
+// //         font-size: 0.9vw !important;
+// //       }
+// //     }
+// //   }
+// // }
+//
+// // @media(min-width: 1800px){
+// //   .power-supply-content {
+// //     .main-display{
+// //       p {
+// //         font-size: 1.9vw !important;
+// //       }
+// //     }
+// //     .sub-display{
+// //       p {
+// //         font-size: 0.8vw !important;
+// //       }
+// //     }
+// //   }
+// // }
+//
+// // ----------------------------------------
+//
+// @media(max-width: 1200px){
+//   .power-supply-content {
+//     .sub-display{
+//       p {
+//         font-size: 0.75vw !important;
+//       }
+//     }
+//   }
+// }
+//
+// @media(max-width: 1024px) {
+//
+//   .power-control,
+//   .start-control {
+//     top: -70% !important;
+//   }
+//
+//   .power-supply-values {
+//     top: 39% !important;
+//   }
+//
+//   .content.sidebar-active {
+//
+//     .power-control,
+//     .start-control {
+//       top: -12% !important;
+//     }
+//
+//     .main-display {
+//       width: auto;
+//       margin-right: 80px;
+//       .voltage {
+//         top: 46% !important;
+//         left: 83% !important;
+//         font-size: 2.5vw !important;
+//         transform: translate(0%, 0%);
+//       }
+//     }
+//
+//     .power-supply-values {
+//       top: 62.5% !important;
+//       height: calc(calc(1411px - 617px) * 0.3453299492) !important;
+//       .sub-display {
+//         top: 50% !important;
+//         .time-abrv {
+//           margin-left: calc(100% - 74.7%);
+//         }
+//       }
+//
+//     }
+//   }
+//
+// }

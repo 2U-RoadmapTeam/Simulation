@@ -1,0 +1,97 @@
+@import 'styles/_styles.scss';
+@import 'styles/_colors.scss';
+
+.Modal {
+  .wrapper {
+    .protocolTable {
+      height: 81.6% !important;
+    }
+  }
+}
+
+.modal-text p {
+  position: relative;
+  top: -32px;
+  width: -webkit-fill-available;
+  padding: 30px 0px;
+  margin: auto -4%;
+  margin-bottom: 3px;
+  background-color: $white;
+}
+
+.protocol-table-modal {
+  width: -webkit-fill-available;
+  margin: -36px -33px;
+  border-collapse: collapse;
+
+  colgroup {
+    col {
+      width: 5%;
+      color: $white;
+      background-color: $navy2;
+    }
+  }
+
+  tr {
+    th {
+      padding: 8px 5px !important;
+      border: 2px solid $navy1;
+      color: $white !important;
+      background-color: $navy2 !important;
+    }
+
+    td {
+      border: 2px solid $navy1;
+      margin: 0px !important;
+    }
+  }
+
+  th {
+    text-align: left;
+  }
+
+  tbody {
+    tr {
+      td {
+        input[type="text"] {
+          width: 135px;
+          height: 50px;
+          padding-left: 5px;
+          margin: -6px -31px -6px -3px;
+          color: $navy2;
+          border: 2px solid $navy2;
+          background-color: $navy6;
+          text-align: center;
+          font-size: 16px;
+
+          &::placeholder {
+            color: $navy2;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .protocol-modal-form {
+    display: block !important;
+  }
+}
+
+.protocolTable .modal-inner {
+    overflow-y: scroll;
+}
+
+@media only screen and (max-width: 1440px) {
+  // .protocolTable .modal-inner {
+  //   overflow-y: scroll;
+  // }
+
+  .Modal {
+    .wrapper {
+      .protocolTable {
+        height: 100% !important;
+      }
+    }
+  }
+}

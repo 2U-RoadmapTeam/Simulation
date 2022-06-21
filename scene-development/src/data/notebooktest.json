@@ -1,0 +1,3108 @@
+{
+    "Notebook": {
+      "Title": "Lab Notebook",
+      "Content": {
+        "Context": {
+          "complete": false
+        },
+        "Materials": {
+          "complete": false
+        },
+        "Predictions": {
+          "complete": false,
+          "components": [
+            {
+              "component": "PSCQ",
+              "props": {
+                "type": "PSCQ",
+                "id": 1,
+                "levels": {
+                  "l1": {
+                    "label": "Positive Control",
+                    "feedback": "The positive control graph shows four different cell lines. The correct choice is the unedited wild type macrophage cell lines (which was our starting material), where the gene of interest is at wild type levels of expression and has not been disrupted.",
+                    "text": "A positive control is a sample in an experiment that produces a known result to compare with the test sample after the same treatment. It is used to control for unknown variables and confirms that all your reagents work.<br/><br/>In this case, the positive control is a cell line expressing wild-type CCR5.<br/><br/>Which of the following do you think will be a good positive control for this experiment? Click on a cell line to select it.",
+                    "choices": [
+                      {
+                        "label": "T Helper cell line",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "A T cell is different from a macrophage and wouldn’t represent the best comparative control. Please try again."
+                      },
+                      {
+                        "label": "Macrophage cell line without CD4",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "This cell line is not a functional immune cell. Please try again."
+                      },
+                      {
+                        "label": "Edited macrophage",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "An edited macrophage cell line contains a changed CCR5 gene and would presumably not express wild-type CCR5 on its surface. Please try again."
+                      },
+                      {
+                        "label": "Unedited wild-type macrophage",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "Correct. Wild-type macrophages carry the undisrupted CCR5 gene and express the co-receptor on the cell surface at normal levels. This serves as a standard to determine the CCR5 protein level in CRISPR-edited macrophages."
+                      }
+                    ],
+                    "attempts": "unlimited",
+                    "answer": 3,
+                    "correct": null
+                  },
+                  "l2": {
+                    "label": "Positive Control",
+                    "feedback": "The positive control graph shows four different cell lines. The correct choice is the unedited wild type macrophage cell lines (which was our starting material), where the gene of interest is at wild type levels of expression and has not been disrupted.",
+                    "text": "A positive control is a sample in an experiment that produces a known result to compare with the test sample after the same treatment. It is used to control for unknown variables and confirms that all your reagents work.<br/><br/>In this case, the positive control is a cell line expressing wild-type CCR5.<br/><br/>Which of the following do you think will be a good positive control for this experiment? Click on a cell line to select it.",
+                    "choices": [
+                      {
+                        "label": "T Helper cell line",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "A T cell is different from a macrophage and wouldn’t represent the best comparative control. Please try again."
+                      },
+                      {
+                        "label": "Macrophage cell line without CD4",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "This cell line is not a functional immune cell. Please try again."
+                      },
+                      {
+                        "label": "Edited macrophage",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "An edited macrophage cell line contains a changed CCR5 gene and would presumably not express wild-type CCR5 on its surface. Please try again."
+                      },
+                      {
+                        "label": "Unedited wild-type macrophage",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "Correct. Wild-type macrophages carry the undisrupted CCR5 gene and express the co-receptor on the cell surface at normal levels. This serves as a standard to determine the CCR5 protein level in CRISPR-edited macrophages."
+                      }
+                    ],
+                    "attempts": "unlimited",
+                    "answer": 3,
+                    "correct": null
+                  },
+                  "l3": {
+                    "label": "Positive Control",
+                    "feedback": "The positive control graph shows four different cell lines. The correct choice is the unedited wild type macrophage cell lines (which was our starting material), where the gene of interest is at wild type levels of expression and has not been disrupted.",
+                    "text": "A positive control is a sample in an experiment that produces a known result to compare with the test sample after the same treatment. It is used to control for unknown variables and confirms that all your reagents work.<br/><br/>In this case, the positive control is a cell line expressing wild-type CCR5.<br/><br/>Which of the following do you think will be a good positive control for this experiment? Click on a cell line to select it.",
+                    "choices": [
+                      {
+                        "label": "T Helper cell line",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "A T cell is different from a macrophage and wouldn’t represent the best comparative control. Please try again."
+                      },
+                      {
+                        "label": "Macrophage cell line without CD4",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "This cell line is not a functional immune cell. Please try again."
+                      },
+                      {
+                        "label": "Edited macrophage",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "An edited macrophage cell line contains a changed CCR5 gene and would presumably not express wild-type CCR5 on its surface. Please try again."
+                      },
+                      {
+                        "label": "Unedited wild-type macrophage",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "Correct. Wild-type macrophages carry the undisrupted CCR5 gene and express the co-receptor on the cell surface at normal levels. This serves as a standard to determine the CCR5 protein level in CRISPR-edited macrophages."
+                      }
+                    ],
+                    "attempts": "unlimited",
+                    "answer": 3,
+                    "correct": null
+                  }
+                }
+              }
+            },
+            {
+              "component": "PSCQ",
+              "props": {
+                "type": "PSCQ",
+                "id": 2,
+                "levels": {
+                  "l1": {
+                    "label": "Negative Control",
+                    "feedback": "The negative control graph shows expression levels of the protein of interest in various cell types. Users need to click on one cell type to select an appropriate negative control. This correct answer is Pancreas.",
+                    "text": "The negative control is the opposite of the positive control: the positive control produces a known result, whereas the negative control is designed to produce no response after the same treatment. <br/><br/> In our example, a negative control would be a cell line not expressing CCR5. Accordingly, the protein gel should not show a CCR5 band. The negative control confirms that no contaminating or artefact band mimics CCR5 presence, even though there is no actual CCR5 protein present in the cells.<br/><br/> Which of the following cell lines will provide an effective negative control for this experiment? Expression levels of the protein of interest are shown next to each cell type as bars: the longer the bar, the higher the expression level of CCR5.",
+                    "choices": [
+                      {
+                        "label": "Bone marrow and immune system",
+                        "image": "bone-marrow-and-immune-system.svg",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Muscle",
+                        "image": "muscle-tissues.svg",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Lung",
+                        "image": "lung.svg",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Liver and gallbladder",
+                        "image": "liver-and-gallbladder.svg",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Pancreas",
+                        "image": "pancreas.svg",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": "unlimited",
+                    "answer": 4,
+                    "correct": null
+                  },
+                  "l2": {
+                    "label": "Negative Control",
+                    "feedback": "The negative control graph shows expression levels of the protein of interest in various cell types. Users need to click on one cell type to select an appropriate negative control. This correct answer is Pancreas.",
+                    "text": "The negative control is the opposite of the positive control: the positive control produces a known result, whereas the negative control is designed to produce no response after the same treatment. <br/><br/> In our example, a negative control would be a cell line not expressing CCR5. Accordingly, the protein gel should not show a CCR5 band. The negative control confirms that no contaminating or artefact band mimics CCR5 presence, even though there is no actual CCR5 protein present in the cells.<br/><br/> Which of the following cell lines will provide an effective negative control for this experiment? Expression levels of the protein of interest are shown next to each cell type as bars: the longer the bar, the higher the expression level of CCR5.",
+                    "choices": [
+                      {
+                        "label": "Bone marrow and immune system",
+                        "image": "bone-marrow-and-immune-system.svg",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Muscle",
+                        "image": "muscle-tissues.svg",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Lung",
+                        "image": "lung.svg",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Liver and gallbladder",
+                        "image": "liver-and-gallbladder.svg",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Pancreas",
+                        "image": "pancreas.svg",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": "unlimited",
+                    "answer": 4,
+                    "correct": null
+                  },
+                  "l3": {
+                    "label": "Negative Control",
+                    "feedback": "The negative control graph shows expression levels of the protein of interest in various cell types. Users need to click on one cell type to select an appropriate negative control. This correct answer is Pancreas.",
+                    "text": "The negative control is the opposite of the positive control: the positive control produces a known result, whereas the negative control is designed to produce no response after the same treatment. <br/><br/> In our example, a negative control would be a cell line not expressing CCR5. Accordingly, the protein gel should not show a CCR5 band. The negative control confirms that no contaminating or artefact band mimics CCR5 presence, even though there is no actual CCR5 protein present in the cells.<br/><br/> Which of the following cell lines will provide an effective negative control for this experiment? Expression levels of the protein of interest are shown next to each cell type as bars: the longer the bar, the higher the expression level of CCR5.",
+                    "choices": [
+                      {
+                        "label": "Bone marrow and immune system",
+                        "image": "bone-marrow-and-immune-system.svg",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Muscle",
+                        "image": "muscle-tissues.svg",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Lung",
+                        "image": "lung.svg",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Liver and gallbladder",
+                        "image": "liver-and-gallbladder.svg",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Pancreas",
+                        "image": "pancreas.svg",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": "unlimited",
+                    "answer": 4,
+                    "correct": null
+                  }
+                }
+              }
+            },
+  
+            {
+              "component": "PSCQ",
+              "props": {
+                "type": "PSCQ",
+                "id": 3,
+                "levels": {
+                  "l1": {
+                    "label": "Next step",
+                    "feedback": "",
+                    "text": "After disrupting the CCR5 gene in the two macrophages cell lines 4 and 7 (now called edit 4 and edit 7), what will be your next experimental step to verify that these cell lines are now HIV-resistant macrophages?",
+                    "choices": [
+                      {
+                        "label": "To test how well HIV infection of macrophages is inhibited.",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "Incorrect. You are not ready to jump ahead to test whether your macrophage cell lines are HIV-resistant yet."
+                      },
+                      {
+                        "label": "To test for the presence of HIV RNA in your macrophage cell lines.",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "Incorrect. Macrophages are not yet infected with HIV."
+                      },
+                      {
+                        "label": "To design a second set of gRNAs to disrupt gp120.",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "Incorrect. Macrophages do not carry the gene encoding gp120 since it’s an HIV protein."
+                      },
+                      {
+                        "label": "To test the protein expression of CCR5.",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "Correct."
+                      }
+                    ],
+                    "attempts": 2,
+                    "answer": 3,
+                    "correct": null
+                  },
+                  "l2": {
+                    "label": "Next step",
+                    "feedback": "",
+                    "text": "After disrupting the CCR5 gene in the two macrophages cell lines 4 and 7 (now called edit 4 and edit 7), what will be your next experimental step to verify that these cell lines are now HIV-resistant macrophages?",
+                    "choices": [
+                      {
+                        "label": "To test how well HIV infection of macrophages is inhibited.",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "Incorrect. You are not ready to jump ahead to test whether your macrophage cell lines are HIV-resistant yet."
+                      },
+                      {
+                        "label": "To test for the presence of HIV RNA in your macrophage cell lines.",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "Incorrect. Macrophages are not yet infected with HIV."
+                      },
+                      {
+                        "label": "To design a second set of gRNAs to disrupt gp120.",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "Incorrect. Macrophages do not carry the gene encoding gp120 since it’s an HIV protein."
+                      },
+                      {
+                        "label": "To test the protein expression of CCR5.",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "Correct."
+                      }
+                    ],
+                    "attempts": 2,
+                    "answer": 3,
+                    "correct": null
+                  },
+                  "l3": {
+                    "label": "Next step",
+                    "feedback": "",
+                    "text": "After disrupting the CCR5 gene in the two macrophages cell lines 4 and 7 (now called edit 4 and edit 7), what will be your next experimental step to verify that these cell lines are now HIV-resistant macrophages?",
+                    "choices": [
+                      {
+                        "label": "To test how well HIV infection of macrophages is inhibited.",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "Incorrect. You are not ready to jump ahead to test whether your macrophage cell lines are HIV-resistant yet."
+                      },
+                      {
+                        "label": "To test for the presence of HIV RNA in your macrophage cell lines.",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "Incorrect. Macrophages are not yet infected with HIV."
+                      },
+                      {
+                        "label": "To design a second set of gRNAs to disrupt gp120.",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "Incorrect. Macrophages do not carry the gene encoding gp120 since it’s an HIV protein."
+                      },
+                      {
+                        "label": "To test the protein expression of CCR5.",
+                        "checked": false,
+                        "correct": null,
+                        "feedback": "Correct."
+                      }
+                    ],
+                    "attempts": 2,
+                    "answer": 3,
+                    "correct": null
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "Protocol": {
+          "Sequence": [
+            {
+              "label": "Collect cells.",
+              "complete": false,
+              "action": "",
+              "comments": "",
+              "steps": [
+                {
+                  "levels": {
+                    "Employer": {
+                      "task": "Set the temperature of the heat block to 95°C.",
+                      "criteria": {
+                        "actions": ["INC_HEAT_BLOCK_TEMP"],
+                        "critPaths": ["heatBlock/conditions/temp>90"]
+                      },
+  
+                      "hints": []
+                    },
+                    "Employee": {
+                      "task": "Increase the heat block temperature to 95°C.",
+                      "criteria": {
+                        "actions": ["INC_HEAT_BLOCK_TEMP"],
+                        "critPaths": ["heatBlock/conditions/temp>90"]
+                      }
+                    },
+                    "HR": {
+                      "task": "Increase the heat block temperature to 95°C.",
+                      "criteria": {
+                        "actions": ["INC_HEAT_BLOCK_TEMP"],
+                        "critPaths": ["heatBlock/conditions/temp>90"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Switch on the heat block and set the temperature to 95 degrees Celsius. ",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Set the P200 micropipette to 30µl. ",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_VOL"],
+                        "critPaths": ["pipettes/type=P200/conditions/volume<=200&volume>=2"]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Set a micropipette to 30µl. ",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_VOL"],
+                        "critPaths": ["pipettes/type=P200/conditions/volume<=200&volume>=2"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Set a micropipette to 30µl and attach a tip.",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_VOL", "SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P200/conditions/volume<=200&volume>=2", "pipettes/type=P200/conditions/tipAttached=true"]
+                      }
+                    }
+                  },
+                  "action": "$user set the P200 micropipette volume.",
+                  "aria": "Set the P200 micropipette to 30 microliters.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Attach a P200 tip.",
+                      "criteria": {
+                        "actions": ["SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P200/conditions/tipAttached=true"]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Attach a tip.",
+                      "criteria": {
+                        "actions": ["SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P200/conditions/tipAttached=true"]
+                      }
+                    },
+                    "l3": {
+                      "task": "",
+                      "criteria": {
+                        "actions": [],
+                        "critPaths": []
+                      }
+                    }
+                  },
+                  "action": "$user attached the P200 micropipette tip.",
+                  "aria": "Attach a P200 tip.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Move the micropipette so its tip is in the wild type cell culture.",
+                      "criteria": {
+                        "actions": ["SET_LAST_DROP"],
+                        "critPaths": ["scene/lastDrop/lastTarget/conditions/type=Solution&solution=Wild type vessel"]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Move the micropipette to the wild type cell culture.",
+                      "criteria": {
+                        "actions": ["SET_LAST_DROP"],
+                        "critPaths": ["scene/lastDrop/lastTarget/conditions/type=Solution&solution=Wild type vessel"]
+                      }
+                    },
+                    "l3": {
+                      "task": "",
+                      "criteria": {
+                        "actions": [],
+                        "critPaths": []
+                      }
+                    }
+                  },
+                  "action": "$user picked up the P200 micropipette.",
+                  "aria": ": Move the micropipette so its tip is in the wild type cell culture.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Draw up the wild type cell culture by pressing the plunger to the first stop, immersing the tip in the solution, and releasing the plunger slowly.",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_SOLUTION"],
+                        "critPaths": ["pipettes/type=P200/conditions/solutionAlias=Wild type vessel"]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Draw up the wild type cell culture by pressing the plunger to the first stop.",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_SOLUTION"],
+                        "critPaths": ["pipettes/type=P200/conditions/solutionAlias=Wild type vessel"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Draw up the wild type cell culture.",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_SOLUTION"],
+                        "critPaths": ["pipettes/type=P200/conditions/solutionAlias=Wild type vessel"]
+                      }
+                    }
+                  },
+                  "action": "$user picked up the P200 micropipette.",
+                  "aria": "Draw up the wild type cell culture by pressing the plunger to the first stop, immersing the tip in the solution, and releasing the plunger slowly.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Close the wild type cell culture.",
+                      "criteria": {
+                        "actions": ["SOLUTION_OPEN"],
+                        "critPaths": ["solutions/type=Wild type vessel/conditions/open=false"]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Close the wild type cell culture.",
+                      "criteria": {
+                        "actions": ["SOLUTION_OPEN"],
+                        "critPaths": ["solutions/type=Wild type vessel/conditions/open=false"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Close the wild type cell culture.",
+                      "criteria": {
+                        "actions": ["SOLUTION_OPEN"],
+                        "critPaths": ["solutions/type=Wild type vessel/conditions/open=false"]
+                      }
+                    }
+                  },
+                  "action": "$user picked up the P200 micropipette.",
+                  "aria": "Close the wild type cell culture.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Move the micropipette so its tip is in the wild type cells tube.",
+                      "criteria": {
+                        "actions": ["SET_LAST_DROP"],
+                        "critPaths": ["scene/lastDrop/lastTarget/conditions/type=Solution&solution=Wild type tube"]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Move the micropipette to the wild type cells tube. ",
+                      "criteria": {
+                        "actions": ["SET_LAST_DROP"],
+                        "critPaths": ["scene/lastDrop/lastTarget/conditions/type=Solution&solution=Wild type tube"]
+                      }
+                    },
+                    "l3": {
+                      "task": "",
+                      "criteria": {
+                        "actions": ["SET_LAST_DROP"],
+                        "critPaths": ["scene/lastDrop/lastTarget/conditions/type=Solution&solution=Wild type tube"]
+                      }
+                    }
+                  },
+                  "action": "$user picked up the P200 micropipette.",
+                  "aria": "Move the micropipette so its tip is in the wild type cells tube. ",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Dispense the wild type cell culture into the wild type cells tube by holding down the plunger until it reaches the second stop.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Wild type tube/solutions/conditions/Wild type>0"]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Dispense the wild type cell culture into the wild type cells tube by pressing the plunger to the second stop.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Wild type tube/solutions/conditions/Wild type>0"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Dispense the wild type cell culture into the wild type cells tube. ",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Wild type tube/solutions/conditions/Wild type>0"]
+                      }
+                    }
+                  },
+                  "action": "$user picked up the P200 micropipette.",
+                  "aria": "Dispense the wild type cell culture into the wild type cells tube by holding down the plunger until it reaches the second stop. ",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Use the eject button to eject the tip into the trash.",
+                      "criteria": {
+                        "actions": ["SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P200/conditions/tipAttached=false"]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Eject the micropipette tip.",
+                      "criteria": {
+                        "actions": ["SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P200/conditions/tipAttached=false"]
+                      }
+                    },
+                    "l3": {
+                      "task": "",
+                      "criteria": {
+                        "actions": [],
+                        "critPaths": []
+                      }
+                    }
+                  },
+                  "action": "$user ejected the P200 micropipette tip.",
+                  "aria": "Use the eject button to eject the tip into the trash.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Repeat the procedure to dispense 30µl of the pancreas cell culture into the pancreas cells tube.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Pancreas tube/solutions/conditions/Pancreas>0"]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Repeat the procedure to dispense 30µl of the pancreas cell culture into the pancreas cells tube.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Pancreas tube/solutions/conditions/Pancreas>0"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Repeat the procedure to transfer 30µl of the pancreas cells culture.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Pancreas tube/solutions/conditions/Pancreas>0"]
+                      }
+                    }
+                  },
+                  "action": "$user picked up the P20 micropipette.",
+                  "aria": "Repeat the procedure to dispense 30 microliters of the pancreas cell culture into the pancreas cells tube.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Repeat the procedure to dispense 30µl of the edit 4 cell culture into the edit 4 tube.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Edit 4 tube/solutions/conditions/Edit 4>0"]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Repeat the procedure to dispense 30µl of the edit 4 cell culture into the edit 4 tube.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Edit 4 tube/solutions/conditions/Edit 4>0"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Repeat the procedure to transfer 30µl of the edit 4 cell culture.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Edit 4 tube/solutions/conditions/Edit 4>0"]
+                      }
+                    }
+                  },
+                  "action": "$user picked up the P20 micropipette.",
+                  "aria": "Repeat the procedure to dispense 30 microliters of the edit 4 cell culture into the edit 4 tube. ",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Repeat the procedure to dispense 30µl of the edit 7 cell culture into the edit 7 tube.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Edit 7 tube/solutions/conditions/Edit 7>0"]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Repeat the procedure to dispense 30µl of the positive control into the edit 7 tube.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Edit 7 tube/solutions/conditions/Edit 7>0"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Repeat the procedure to transfer 30µl of the edit 7 cell culture.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Edit 7 tube/solutions/conditions/Edit 7>0"]
+                      }
+                    }
+                  },
+                  "action": "$user picked up the P20 micropipette.",
+                  "aria": "Repeat the procedure to dispense 30 microliters of the edit 7 cell culture into the edit 7 tube.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                }
+              ]
+            },
+            {
+              "label": "Add sample buffer.",
+              "complete": false,
+              "action": "",
+              "comments": "",
+              "moves": "",
+              "steps": [
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Set the P20 micropipette to 10µl.",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_VOL"],
+                        "critPaths": ["pipettes/type=P20/conditions/volume<=20&volume>=2"]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Set a micropipette to 10µl.",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_VOL"],
+                        "critPaths": ["pipettes/type=P20/conditions/volume<=20&volume>=2"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Set a micropipette to 10µl and attach a tip.",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_VOL", "SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P20/conditions/volume<=20&volume>=2"]
+                      }
+                    }
+                  },
+                  "action": "$user set the P20 micropipette volume.",
+                  "aria": "Set the P20 micropipette to 10 microliters.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Attach a P20 tip to a P20 micropipette.",
+                      "criteria": {
+                        "actions": ["SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P20/conditions/tipAttached=true"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Attach a P20 tip to a P20 micropipette.",
+                      "criteria": {
+                        "actions": ["SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P20/conditions/tipAttached=true"]
+                      }
+                    },
+                    "l3": {
+                      "task": "",
+                      "criteria": {
+                        "actions": [],
+                        "critPaths": []
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Attach a P20 tip to a P20 micropipette.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Move the micropipette so its tip is in the 4X SDS sample buffer. ",
+                      "criteria": {
+                        "actions": ["SET_LAST_DROP"],
+                        "critPaths": ["scene/lastDrop/lastTarget/conditions/type=Solution&solution=4x SDS sample buffer"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Move the micropipette to the 4X SDS sample buffer.",
+                      "criteria": {
+                        "actions": ["SET_LAST_DROP"],
+                        "critPaths": ["scene/lastDrop/lastTarget/conditions/type=Solution&solution=4x SDS sample buffer"]
+                      }
+                    },
+                    "l3": {
+                      "task": "",
+                      "criteria": {
+                        "actions": ["SET_LAST_DROP"],
+                        "critPaths": ["scene/lastDrop/lastTarget/conditions/type=Solution&solution=4x SDS sample buffer"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Move the micropipette so its tip is in the 4 X S D S sample buffer. ",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Draw up 10µl of 4X SDS sample buffer by pressing the plunger to the first stop, immersing the tip in the solution and, releasing the plunger slowly.",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_SOLUTION"],
+                        "critPaths": ["pipettes/type=P20/conditions/solutionAlias=4x SDS sample buffer"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Draw up 10µl of 4X SDS sample buffer by pressing the plunger to the first stop.",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_SOLUTION"],
+                        "critPaths": ["pipettes/type=P20/conditions/solutionAlias=4x SDS sample buffer"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Draw up 10µl of 4X SDS sample buffer.",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_SOLUTION"],
+                        "critPaths": ["pipettes/type=P20/conditions/solutionAlias=4x SDS sample buffer"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Draw up the appropriate amount of 4 X S D S sample buffer by pressing the plunger to the first stop, immersing the tip in the solution and, releasing the plunger slowly.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Close the 4x SDS sample buffer.",
+                      "criteria": {
+                        "actions": ["SOLUTION_OPEN"],
+                        "critPaths": ["solutions/type=4x SDS sample buffer/conditions/open=false"]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Close the 4x SDS sample buffer.",
+                      "criteria": {
+                        "actions": ["SOLUTION_OPEN"],
+                        "critPaths": ["solutions/type=4x SDS sample buffer/conditions/open=false"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Close the 4x SDS sample buffer.",
+                      "criteria": {
+                        "actions": ["SOLUTION_OPEN"],
+                        "critPaths": ["solutions/type=4x SDS sample buffer/conditions/open=false"]
+                      }
+                    }
+                  },
+                  "action": "$user picked up the P200 micropipette.",
+                  "aria": "Close the 4x SDS sample buffer.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Move the micropipette so its tip is in the wild type cells tube.",
+                      "criteria": {
+                        "actions": ["SET_LAST_DROP"],
+                        "critPaths": ["scene/lastDrop/lastTarget/conditions/type=Solution&solution=Wild type tube"]
+                      },
+                      "popups": [{
+                        "fired": false,
+                        "type": "POPUP_QUESTION",
+                        "size": "popup",
+                        "data": {
+                          "components": [
+                            {
+                              "component": "Popup",
+                              "props": {
+                                "type": "Popup",
+                                "id": 1,
+                                "label": "What is the purpose of adding SDS to the cell cultures?",
+                                "choices": [
+                                  {
+                                    "label": "SDS solubilizes membrane proteins.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Partially correct. There are additional effects."
+                                  },
+                                  {
+                                    "label": "SDS breaks down cell membranes and releases the cell content.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Partially correct. There are additional effects."
+                                  },
+                                  {
+                                    "label": "SDS destroys protein.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect. SDS unfolds protein but does not destroy or alter the amino acid sequence."
+                                  },
+                                  {
+                                    "label": "SDS unfolds proteins and covers them with negative charge. Negatively charged proteins can be separated in a protein gel according to mass after applying an electrical current.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Partially correct. There are additional effects."
+                                  },
+                                  {
+                                    "label": "All except C.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Correct. All except C."
+                                  },
+                                  {
+                                    "label": "All of the above.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect. SDS unfolds protein but does not destroy or alter the amino acid sequence."
+                                  }
+                                ],
+                                "attempts": "unlimited",
+                                "answer": 4,
+                                "correct": null
+                              }
+                            }
+                          ]
+                        }
+                      }]
+                    },
+                    "l2": {
+                      "task": "Move the micropipette to the wild type cells tube.",
+                      "criteria": {
+                        "actions": ["SET_LAST_DROP"],
+                        "critPaths": ["scene/lastDrop/lastTarget/conditions/type=Solution&solution=Wild type tube"]
+                      },
+                      "popups": [{
+                        "fired": false,
+                        "type": "POPUP_QUESTION",
+                        "size": "popup",
+                        "data": {
+                          "components": [
+                            {
+                              "component": "Popup",
+                              "props": {
+                                "type": "Popup",
+                                "id": 1,
+                                "label": "What is the purpose of adding SDS to the cell cultures?",
+                                "choices": [
+                                  {
+                                    "label": "SDS solubilizes membrane proteins.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Partially correct. There are additional effects."
+                                  },
+                                  {
+                                    "label": "SDS breaks down cell membranes and releases the cell content.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": ""
+                                  },
+                                  {
+                                    "label": "SDS destroys protein.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect. SDS unfolds protein but does not destroy or alter the amino acid sequence."
+                                  },
+                                  {
+                                    "label": "SDS unfolds proteins and covers them with negative charge. Negatively charged proteins can be separated in a protein gel according to mass after applying an electrical current.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Partially correct. There are additional effects."
+                                  },
+                                  {
+                                    "label": "All except C.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "All except C."
+                                  },
+                                  {
+                                    "label": "All of the above.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect. SDS unfolds protein but does not destroy or alter the amino acid sequence."
+                                  }
+                                ],
+                                "attempts": "unlimited",
+                                "answer": 4,
+                                "correct": null
+                              }
+                            }
+                          ]
+                        }
+                      }]
+                    },
+                    "l3": {
+                      "task": "",
+                      "criteria": {
+                        "actions": ["SET_LAST_DROP"],
+                        "critPaths": ["scene/lastDrop/lastTarget/conditions/type=Solution&solution=Wild type tube"]
+                      },
+                      "popups": [{
+                        "fired": false,
+                        "type": "POPUP_QUESTION",
+                        "size": "popup",
+                        "data": {
+                          "components": [
+                            {
+                              "component": "Popup",
+                              "props": {
+                                "type": "Popup",
+                                "id": 1,
+                                "label": "What is the purpose of adding SDS to the cell cultures?",
+                                "choices": [
+                                  {
+                                    "label": "SDS solubilizes membrane proteins.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Partially correct. There are additional effects."
+                                  },
+                                  {
+                                    "label": "SDS breaks down cell membranes and releases the cell content.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": ""
+                                  },
+                                  {
+                                    "label": "SDS destroys protein.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect. SDS unfolds protein but does not destroy or alter the amino acid sequence."
+                                  },
+                                  {
+                                    "label": "SDS unfolds proteins and covers them with negative charge. Negatively charged proteins can be separated in a protein gel according to mass after applying an electrical current.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Partially correct. There are additional effects."
+                                  },
+                                  {
+                                    "label": "All except C.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "All except C."
+                                  },
+                                  {
+                                    "label": "All of the above.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect. SDS unfolds protein but does not destroy or alter the amino acid sequence."
+                                  }
+                                ],
+                                "attempts": "unlimited",
+                                "answer": 4,
+                                "correct": null
+                              }
+                            }
+                          ]
+                        }
+                      }]
+                    }
+                  },
+                  "action": "",
+                  "aria": "Move the micropipette so its tip is in the edit 4 tube.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Dispense the 4X SDS sample buffer into the wild type cells tube by holding down the plunger until it reaches the second stop.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Wild type tube/solutions/conditions/4x SDS sample buffer>0"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Dispense the 4X SDS sample buffer into the wild type cells tube by pressing the plunger to the second stop.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Wild type tube/solutions/conditions/4x SDS sample buffer>0"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Dispense the 4X SDS sample buffer into the wild type cells tube.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Wild type tube/solutions/conditions/4x SDS sample buffer>0"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Dispense the 4 X S D S sample buffer into the wild type cells tube by holding down the plunger until it reaches the second stop.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Use the eject button to eject the tip into the trash.",
+                      "criteria": {
+                        "actions": ["SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P20/conditions/tipAttached=false"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Eject the micropipette tip.",
+                      "criteria": {
+                        "actions": ["SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P20/conditions/tipAttached=false"]
+                      }
+                    },
+                    "l3": {
+                      "task": "",
+                      "criteria": {
+                        "actions": ["SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P20/conditions/tipAttached=false"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Use the eject button to eject the tip into the trash.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Repeat the procedure to dispense 10µl of 4X SDS sample buffer into the pancreas cells tube.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Pancreas tube/solutions/conditions/4x SDS sample buffer>0"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Repeat the procedure to dispense 10µl of 4X SDS sample buffer into the pancreas cells tube.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Pancreas tube/solutions/conditions/4x SDS sample buffer>0"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Repeat the procedure to dispense 10µl of 4X SDS sample buffer into the pancreas cells tube.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Pancreas tube/solutions/conditions/4x SDS sample buffer>0"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Repeat the procedure to dispense the appropriate amount of 4 X S D S sample buffer into the pancreas cells tube. ",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Repeat the procedure to dispense 10µl of 4X SDS sample buffer into the edit 4 tube.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Edit 4 tube/solutions/conditions/4x SDS sample buffer>0"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Repeat the procedure to dispense 10µl of 4X SDS sample buffer into the edit 4 tube.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Edit 4 tube/solutions/conditions/4x SDS sample buffer>0"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Repeat the procedure to dispense 10µl of 4X SDS sample buffer into the edit 4 tube.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Edit 4 tube/solutions/conditions/4x SDS sample buffer>0"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Repeat the procedure to dispense 10µl of 4 X S D S sample buffer into the edit 4 tube.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Repeat the procedure to dispense 10µl of 4X SDS sample buffer into the edit 7 tube. The protein ladder already contains SDS sample buffer.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Edit 7 tube/solutions/conditions/4x SDS sample buffer>0"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Repeat the procedure to dispense 10µl of 4X SDS sample buffer into the edit 7 tube. The protein ladder already contains SDS sample buffer.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Edit 7 tube/solutions/conditions/4x SDS sample buffer>0"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Repeat the procedure to dispense 10µl of 4X SDS sample buffer into the edit 7 tube. The protein ladder already contains SDS sample buffer.",
+                      "criteria": {
+                        "actions": ["INC_SOLUTION"],
+                        "critPaths": ["solutions/type=Edit 7 tube/solutions/conditions/4x SDS sample buffer>0"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Repeat the procedure to dispense the appropriate amount of 4 X S D S sample buffer into the wild type cells tube.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                }
+              ]
+            },
+            {
+              "label": "Denature the proteins.",
+              "complete": false,
+              "action": "",
+              "comments": "",
+              "moves": "",
+              "steps": [
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Move all of your four sample tubes to the heat block. ",
+                      "criteria": {
+                        "actions": ["ADD_TUBE_TO_HEAT_BLOCK"],
+                        "critPaths": ["heatBlock/conditions/numberOfSolutions>3"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Move all of your four sample tubes to the heat block.",
+                      "criteria": {
+                        "actions": ["ADD_TUBE_TO_HEAT_BLOCK"],
+                        "critPaths": ["heatBlock/conditions/numberOfSolutions>3"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Move all of your four sample tubes to the heat block.",
+                      "criteria": {
+                        "actions": ["ADD_TUBE_TO_HEAT_BLOCK"],
+                        "critPaths": ["heatBlock/conditions/numberOfSolutions>3"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Move all the tubes to the heat block. ",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Set the heat block timer to ten minutes, and press start.",
+                      "criteria": {
+                        "actions": ["SET_HEAT_BLOCK_ACTIVE"],
+                        "critPaths": ["heatBlock/conditions/timer>90&active=true"]
+                      },
+                      "hints": []
+                    },
+                    "l2": {
+                      "task": "Set the heat block timer to ten minutes, and press start.",
+                      "criteria": {
+                        "actions": ["SET_HEAT_BLOCK_ACTIVE"],
+                        "critPaths": ["heatBlock/conditions/timer>90&active=true"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Set the heat block timer to ten minutes, and press start.",
+                      "criteria": {
+                        "actions": ["SET_HEAT_BLOCK_ACTIVE"],
+                        "critPaths": ["heatBlock/conditions/timer>90&active=true"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Switch on the heat block and set the temperature to 95 degrees Celsius. ",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Remove all of your sample tubes from the heat block. ",
+                      "criteria": {
+                        "actions": ["REMOVE_TUBE_FROM_HEAT_BLOCK"],
+                        "critPaths": ["heatBlock/conditions/numberOfSolutions=0"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Remove all of your sample tubes from the heat block.",
+                      "criteria": {
+                        "actions": ["REMOVE_TUBE_FROM_HEAT_BLOCK"],
+                        "critPaths": ["heatBlock/conditions/numberOfSolutions=0"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Remove all of your sample tubes from the heat block.",
+                      "criteria": {
+                        "actions": ["REMOVE_TUBE_FROM_HEAT_BLOCK"],
+                        "critPaths": ["heatBlock/conditions/numberOfSolutions=0"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Remove all the tubes from the heat block. ",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                }
+              ]
+            },
+            {
+              "label": "Centrifuge the samples.",
+              "complete": false,
+              "action": "",
+              "comments": "",
+              "moves": "",
+              "steps": [
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Open the microcentrifuge lid and move your 4 sample tubes to the microcentrifuge. The protein ladder does not need to be spun down.",
+                      "criteria": {
+                        "actions": ["ADD_TUBE_TO_CENTRIFUGE", "SET_SOLUTION_TUBES"],
+                        "critPaths": [
+                          "centrifuge/conditions/solutionTubes>3"
+                        ]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Move all of your sample tubes to the microcentrifuge.",
+                      "criteria": {
+                        "actions": ["ADD_TUBE_TO_CENTRIFUGE", "SET_SOLUTION_TUBES"],
+                        "critPaths": [
+                          "centrifuge/conditions/solutionTubes>3"
+                        ]
+                      }
+                    },
+                    "l3": {
+                      "task": "Move all of your sample tubes to the microcentrifuge.",
+                      "criteria": {
+                        "actions": ["ADD_TUBE_TO_CENTRIFUGE", "SET_SOLUTION_TUBES"],
+                        "critPaths": [
+                          "centrifuge/conditions/solutionTubes>3"
+                        ]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Open the microcentrifuge lid and move all the tubes to the microcentrifuge. ",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Place the 4 tubes so filled receptacles are symmetrical and close the microcentrifuge lid.",
+                      "criteria": {
+                        "actions": ["CENTRIFUGE_BALANCED", "SET_CENTRIFUGE_OPEN"],
+                        "critPaths": [
+                          "centrifuge/conditions/balanced=true",
+                          "centrifuge/conditions/open=false"
+                        ]
+                      }
+                    },
+                    "l2": {
+                      "task": "Place the tubes so filled receptacles are symmetrical.",
+                      "criteria": {
+                        "actions": ["CENTRIFUGE_BALANCED"],
+                        "critPaths": [
+                          "centrifuge/conditions/balanced=true"
+                        ]
+                      }
+                    },
+                    "l3": {
+                      "task": "",
+                      "criteria": {
+                        "actions": ["CENTRIFUGE_BALANCED"],
+                        "critPaths": [
+                          "centrifuge/conditions/balanced=true"
+                        ]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Place the tubes so filled receptacles are symmetrical and close the microcentrifuge lid.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Press the pulse button to briefly spin the liquid to the bottom of the solution tubes.",
+                      "criteria": {
+                        "actions": ["SET_SOLUTION_HOMOGENIZED"],
+                        "critPaths": [
+                          "solutions/type=Wild type tube/conditions/homogenized=true"
+                        ]
+                      }
+                    },
+                    "l2": {
+                      "task": "Press the pulse button to briefly spin the solution tubes.",
+                      "criteria": {
+                        "actions": ["SET_SOLUTION_HOMOGENIZED"],
+                        "critPaths": [
+                          "solutions/type=Wild type tube/conditions/homogenized=true"
+                        ]
+                      }
+                    },
+                    "l3": {
+                      "task": "Briefly spin the tubes.",
+                      "criteria": {
+                        "actions": ["SET_SOLUTION_HOMOGENIZED"],
+                        "critPaths": [
+                          "solutions/type=Wild type tube/conditions/homogenized=true"
+                        ]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Press the pulse button to briefly spin the liquid to the bottom of the solution tubes.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Remove the tubes from the microcentrifuge.",
+                      "criteria": {
+                        "actions": ["SET_SOLUTION_ON_RACK"],
+                        "critPaths": [
+                          "solutions/type=Wild type tube/conditions/onRack=true"
+                        ]
+                      }
+                    },
+                    "l2": {
+                      "task": "Remove the tubes from the microcentrifuge.",
+                      "criteria": {
+                        "actions": ["SET_SOLUTION_ON_RACK"],
+                        "critPaths": [
+                          "solutions/type=Wild type tube/conditions/onRack=true"
+                        ]
+                      }
+                    },
+                    "l3": {
+                      "task": "Remove the tubes.",
+                      "criteria": {
+                        "actions": ["SET_SOLUTION_ON_RACK"],
+                        "critPaths": [
+                          "solutions/type=Wild type tube/conditions/onRack=true"
+                        ]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Remove the tubes from the microcentrifuge.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                }
+              ]
+            },
+            {
+              "label": "Load the gel.",
+              "complete": false,
+              "action": "",
+              "comments": "",
+              "moves": "",
+              "steps": [
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Place the polyacrylamide gel in the electrophoresis box.",
+                      "criteria": {
+                        "actions": ["SET_GEL_IN_BOX"],
+                        "critPaths": ["gelBoxes/type=Protein Gel Electrophoresis Box/conditions/containsGel=true"]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Place the polyacrylamide gel in the electrophoresis box.",
+                      "criteria": {
+                        "actions": ["SET_GEL_IN_BOX"],
+                        "critPaths": ["gelBoxes/type=Protein Gel Electrophoresis Box/conditions/containsGel=true"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Place the polyacrylamide gel in the electrophoresis box.",
+                      "criteria": {
+                        "actions": ["SET_GEL_IN_BOX"],
+                        "critPaths": ["gelBoxes/type=Protein Gel Electrophoresis Box/conditions/containsGel=true"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Pick up the precast SDS-PAGE gel and secure it in gel cassette.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Fill the gel cassette with 1X Running buffer until it covers the wells of the gel. ",
+                      "criteria": {
+                        "actions": ["SET_SOLUTION_IN_GEL"],
+                        "critPaths": ["gelBoxes/type=Protein Gel Electrophoresis Box/conditions/gelSolutionAlias=1x Running Buffer"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Fill the gel cassette with 1X Running buffer until it covers the wells of the gel",
+                      "criteria": {
+                        "actions": ["SET_SOLUTION_IN_GEL"],
+                        "critPaths": ["gelBoxes/type=Protein Gel Electrophoresis Box/conditions/gelSolutionAlias=1x Running Buffer"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Fill the gel cassette with 1X Running buffer.",
+                      "criteria": {
+                        "actions": ["SET_SOLUTION_IN_GEL"],
+                        "critPaths": ["gelBoxes/type=Protein Gel Electrophoresis Box/conditions/gelSolutionAlias=1x Running Buffer"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Fill the gel cassette with 1X Running buffer until it covers the wells of the gel.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Remove the comb from gel cassette.",
+                      "criteria": {
+                        "actions": ["REMOVE_GEL_COMB"],
+                        "critPaths": ["gels/id=1/conditions/comb=false"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Remove the comb from gel cassette.",
+                      "criteria": {
+                        "actions": ["REMOVE_GEL_COMB"],
+                        "critPaths": ["gels/id=1/conditions/comb=false"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Remove the comb.",
+                      "criteria": {
+                        "actions": ["REMOVE_GEL_COMB"],
+                        "critPaths": ["gels/id=1/conditions/comb=false"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Remove the comb from gel cassette.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Fill the outer gel electrophoresis tank with 1X running buffer.",
+                      "criteria": {
+                        "actions": ["SET_SOLUTION_IN_GEL_BOX"],
+                        "critPaths": ["gelBoxes/type=Protein Gel Electrophoresis Box/conditions/solutionAlias=1x Running Buffer"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Fill the outer gel electrophoresis tank with 1X running buffer.",
+                      "criteria": {
+                        "actions": ["SET_SOLUTION_IN_GEL_BOX"],
+                        "critPaths": ["gelBoxes/type=Protein Gel Electrophoresis Box/conditions/solutionAlias=1x Running Buffer"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Fill the outer gel electrophoresis tank with 1X running buffer.",
+                      "criteria": {
+                        "actions": ["SET_SOLUTION_IN_GEL_BOX"],
+                        "critPaths": ["gelBoxes/type=Protein Gel Electrophoresis Box/conditions/solutionAlias=1x Running Buffer"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Fill the outer gel electrophoresis tank with 1X running buffer.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Set the P200 micropipette to 20µl.",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_VOL"],
+                        "critPaths": ["pipettes/type=P200||type=P20/conditions/volume<=200&volume>=2"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Set a micropipette to 20µl.",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_VOL"],
+                        "critPaths": ["pipettes/type=P200||type=P20/conditions/volume<=200&volume>=2"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Set a micropipette to 20µl and attach a tip.",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_VOL"],
+                        "critPaths": ["pipettes/type=P200||type=P20/conditions/volume<=200&volume>=2"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Set a micropipette to 20 microliters. ",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Attach a P200 tip.",
+                      "criteria": {
+                        "actions": ["SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P200||type=P20/conditions/tipAttached=true"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Attach a tip.",
+                      "criteria": {
+                        "actions": ["SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P200||type=P20/conditions/tipAttached=true"]
+                      }
+                    },
+                    "l3": {
+                      "task": "",
+                      "criteria": {
+                        "actions": ["SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P200||type=P20/conditions/tipAttached=true"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Attach a P200 tip. ",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Move the micropipette so its tip is in the protein ladder tube.",
+                      "criteria": {
+                        "actions": ["SET_LAST_DROP"],
+                        "critPaths": ["scene/lastDrop/lastTarget/conditions/type=Solution&solution=Protein ladder"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Move the micropipette to the protein ladder tube.",
+                      "criteria": {
+                        "actions": ["SET_LAST_DROP"],
+                        "critPaths": ["scene/lastDrop/lastTarget/conditions/type=Solution&solution=Protein ladder"]
+                      }
+                    },
+                    "l3": {
+                      "task": "",
+                      "criteria": {
+                        "actions": ["SET_LAST_DROP"],
+                        "critPaths": ["scene/lastDrop/lastTarget/conditions/type=Solution&solution=Protein ladder"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Move the micropipette so its tip is in the protein ladder tube.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Draw up the protein ladder by pressing the plunger to the first stop, immersing the tip in the solution and, releasing the plunger slowly.",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_SOLUTION"],
+                        "critPaths": ["pipettes/type=P200||type=P20/conditions/solutionAlias=Protein ladder"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Draw up the protein ladder by pressing the plunger to the first stop.",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_SOLUTION"],
+                        "critPaths": ["pipettes/type=P200||type=P20/conditions/solutionAlias=Protein ladder"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Draw up the protein ladder.",
+                      "criteria": {
+                        "actions": ["SET_PIPETTE_SOLUTION"],
+                        "critPaths": ["pipettes/type=P200||type=P20/conditions/solutionAlias=Protein ladder"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Draw up the protein ladder by pressing the plunger to the first stop, immersing the tip in the solution and, releasing the plunger slowly.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Move the micropipette so its tip is above the 1st lane of the protein gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_ACTIVE_LANE"],
+                        "critPaths": ["gels/id=1/conditions/activeLane=1"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Move the micropipette to the 1st lane of the protein gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_ACTIVE_LANE"],
+                        "critPaths": ["gels/id=1/conditions/activeLane=1"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Move the micropipette to the 1st lane of the protein gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_ACTIVE_LANE"],
+                        "critPaths": ["gels/id=1/conditions/activeLane=1"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Move the micropipette so its tip is above the first lane of the protein gel.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Dispense the protein ladder into the 1st well by holding down the plunger until it reaches the first stop.",
+                      "criteria": {
+                        "actions": ["SET_GEL_LANE"],
+                        "critPaths": ["gels/id=1/lanes/lane1/conditions/empty=false"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Dispense the protein ladder into the 1st well by holding down the plunger until it reaches the first stop.",
+                      "criteria": {
+                        "actions": ["SET_GEL_LANE"],
+                        "critPaths": ["gels/id=1/lanes/lane1/conditions/empty=false"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Dispense the protein ladder into the 1st well.",
+                      "criteria": {
+                        "actions": ["SET_GEL_LANE"],
+                        "critPaths": ["gels/id=1/lanes/lane1/conditions/empty=false"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Dispense the protein ladder into the first well by holding down the plunger until it reaches the first stop.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Use the eject button to eject the tip into the trash.",
+                      "criteria": {
+                        "actions": ["SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P200||type=P20/conditions/tipAttached=false"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Eject the micropipette tip.",
+                      "criteria": {
+                        "actions": ["SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P200||type=P20/conditions/tipAttached=false"]
+                      }
+                    },
+                    "l3": {
+                      "task": "",
+                      "criteria": {
+                        "actions": ["SET_TIP_ATTACHED"],
+                        "critPaths": ["pipettes/type=P200||type=P20/conditions/tipAttached=false"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Use the eject button to eject the tip into the trash.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Repeat the procedure to dispense 20µl of the positive control (wild type cells) into the 2nd well of the gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_LANE"],
+                        "critPaths": ["gels/id=1/lanes/lane2/conditions/empty=false"]
+                      },
+                      "popups": [{
+                        "fired": false,
+                        "type": "POPUP_QUESTION",
+                        "size": "popup",
+                        "data": {
+                          "components": [
+                            {
+                              "component": "Popup",
+                              "props": {
+                                "type": "Popup",
+                                "id": 1,
+                                "label": "How should you micropipette samples into the wells?",
+                                "choices": [
+                                  {
+                                    "label": "Quickly, so the proteins go down in the well.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect."
+                                  },
+                                  {
+                                    "label": "Slowly, to prevent it spilling over into the next well.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Correct."
+                                  },
+                                  {
+                                    "label": "Slowly, but move the plunger up and down to mix.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect."
+                                  }
+                                ],
+                                "attempts": "unlimited",
+                                "answer": 1,
+                                "correct": null
+                              }
+                            }
+                          ]
+                        }
+                      }]
+                    },
+                    "l2": {
+                      "task": "Repeat the procedure to dispense 20µl of the positive control into the 2nd well of the gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_LANE"],
+                        "critPaths": ["gels/id=1/lanes/lane2/conditions/empty=false"]
+                      },
+                      "popups": [{
+                        "fired": false,
+                        "type": "POPUP_QUESTION",
+                        "size": "popup",
+                        "data": {
+                          "components": [
+                            {
+                              "component": "Popup",
+                              "props": {
+                                "type": "Popup",
+                                "id": 1,
+                                "label": "How should you micropipette samples into the wells?",
+                                "choices": [
+                                  {
+                                    "label": "Quickly, so the proteins go down in the well.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect."
+                                  },
+                                  {
+                                    "label": "Slowly, to prevent it spilling over into the next well.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Correct."
+                                  },
+                                  {
+                                    "label": "Slowly, but move the plunger up and down to mix.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect."
+                                  }
+                                ],
+                                "attempts": "unlimited",
+                                "answer": 1,
+                                "correct": null
+                              }
+                            }
+                          ]
+                        }
+                      }]
+                    },
+                    "l3": {
+                      "task": "Dispense 20µl of the positive control into the 2nd well of the gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_LANE"],
+                        "critPaths": ["gels/id=1/lanes/lane2/conditions/empty=false"]
+                      },
+                      "popups": [{
+                        "fired": false,
+                        "type": "POPUP_QUESTION",
+                        "size": "popup",
+                        "data": {
+                          "components": [
+                            {
+                              "component": "Popup",
+                              "props": {
+                                "type": "Popup",
+                                "id": 1,
+                                "label": "How should you micropipette samples into the wells?",
+                                "choices": [
+                                  {
+                                    "label": "Quickly, so the proteins go down in the well.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect."
+                                  },
+                                  {
+                                    "label": "Slowly, to prevent it spilling over into the next well.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Correct."
+                                  },
+                                  {
+                                    "label": "Slowly, but move the plunger up and down to mix.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect."
+                                  }
+                                ],
+                                "attempts": "unlimited",
+                                "answer": 1,
+                                "correct": null
+                              }
+                            }
+                          ]
+                        }
+                      }]
+                    }
+                  },
+                  "action": "",
+                  "aria": "Repeat the procedure to dispense 20 microliters of the positive control (wild type cells) into the second well of the gel.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Repeat the procedure to dispense 20µl of the negative control (pancreas cells) into the 3rd well of the gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_LANE"],
+                        "critPaths": ["gels/id=1/lanes/lane3/conditions/empty=false"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Repeat the procedure to dispense 20µl of the negative control into the 3rd well of the gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_LANE"],
+                        "critPaths": ["gels/id=1/lanes/lane3/conditions/empty=false"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Dispense 20µl of the negative control into the 3rd well of the gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_LANE"],
+                        "critPaths": ["gels/id=1/lanes/lane3/conditions/empty=false"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Repeat the procedure to dispense 20 microliters of the negative control (pancreas cells) into the third well of the gel.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Repeat the procedure to dispense 20µl of the edit 4 cells into the 4th well of the gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_LANE"],
+                        "critPaths": ["gels/id=1/lanes/lane4/conditions/empty=false"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Repeat the procedure to dispense 20µl of the edit 4 cells into the 4th well of the gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_LANE"],
+                        "critPaths": ["gels/id=1/lanes/lane4/conditions/empty=false"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Dispense 20µl of the edit 4 cells into the 4th well of the gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_LANE"],
+                        "critPaths": ["gels/id=1/lanes/lane4/conditions/empty=false"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Repeat the procedure to dispense 20 microliters of the edit 4 cells into the fourth well of the gel.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Repeat the procedure to dispense 20µl of the edit 7 cells into the 5th well of the gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_LANE"],
+                        "critPaths": ["gels/id=1/lanes/lane5/conditions/empty=false"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Repeat the procedure to dispense 20µl of the edit 7 cells into the 5th well of the gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_LANE"],
+                        "critPaths": ["gels/id=1/lanes/lane5/conditions/empty=false"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Dispense 20µl of the edit 7 cells into the 5th well of the gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_LANE"],
+                        "critPaths": ["gels/id=1/lanes/lane5/conditions/empty=false"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Repeat the procedure to dispense 20µl of the edit 7 cells into the 5th well of the gel.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                }
+              ]
+            },
+            {
+              "label": "Conduct protein electrophoresis.",
+              "complete": false,
+              "action": "",
+              "comments": "",
+              "moves": "",
+              "steps": [
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Place the cover over the electrophoresis box.",
+                      "criteria": {
+                        "actions": ["SET_GEL_BOX_OPEN"],
+                        "critPaths": ["gelBoxes/type=Protein Gel Electrophoresis Box/conditions/open=false"]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Cover the electrophoresis box.",
+                      "criteria": {
+                        "actions": ["SET_GEL_BOX_OPEN"],
+                        "critPaths": ["gelBoxes/type=Protein Gel Electrophoresis Box/conditions/open=false"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Cover the electrophoresis box.",
+                      "criteria": {
+                        "actions": ["SET_GEL_BOX_OPEN"],
+                        "critPaths": ["gelBoxes/type=Protein Gel Electrophoresis Box/conditions/open=false"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Place the cover over the electrophoresis box.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Select the red and black cables and connect them to the red and black connection points on the power supply, and the red and black connection points on the lid of the gel electrophoresis box.",
+                      "criteria": {
+                        "actions": ["SET_POWER_SUPPLY_ANODE_CONNECTED"],
+                        "critPaths": ["powerSupply/conditions/anodeConnected=true&cathodeConnected=true"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Connect the red and black cables to the red and black connection points on the power supply and the lid of the gel electrophoresis box.",
+                      "criteria": {
+                        "actions": ["SET_POWER_SUPPLY_ANODE_CONNECTED"],
+                        "critPaths": ["powerSupply/conditions/anodeConnected=true&cathodeConnected=true"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Connect the red and black cables to the power supply and the lid of the gel electrophoresis box.",
+                      "criteria": {
+                        "actions": ["SET_POWER_SUPPLY_ANODE_CONNECTED"],
+                        "critPaths": ["powerSupply/conditions/anodeConnected=true&cathodeConnected=true"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Select the red and black cables and connect them to the red and black connection points on the power supply, and the red and black connection points on the lid of the gel electrophoresis box.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Turn on the power supply.",
+                      "criteria": {
+                        "actions": ["SET_POWER_SUPPLY_POWER"],
+                        "critPaths": ["powerSupply/conditions/power=true"]
+                      },
+                      "hints": [
+  
+                      ]
+                    },
+                    "l2": {
+                      "task": "Turn on the power supply.",
+                      "criteria": {
+                        "actions": ["SET_POWER_SUPPLY_POWER"],
+                        "critPaths": ["powerSupply/conditions/power=true"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Turn on the power supply.",
+                      "criteria": {
+                        "actions": ["SET_POWER_SUPPLY_POWER"],
+                        "critPaths": ["powerSupply/conditions/power=true"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Turn on the power supply.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Set the voltage to 150V.",
+                      "criteria": {
+                        "actions": ["INC_POWER_SUPPLY_VOLTAGE"],
+                        "critPaths": ["powerSupply/conditions/voltage>=10&voltage<=240"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Set the voltage to 150V.",
+                      "criteria": {
+                        "actions": ["INC_POWER_SUPPLY_VOLTAGE"],
+                        "critPaths": ["powerSupply/conditions/voltage>=10&voltage<=240"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Set the voltage to 150V.",
+                      "criteria": {
+                        "actions": ["INC_POWER_SUPPLY_VOLTAGE"],
+                        "critPaths": ["powerSupply/conditions/voltage>=10&voltage<=240"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Set the voltage to a hundred and fifty volts.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Set a timer to 60 minutes.",
+                      "criteria": {
+                        "actions": ["INC_POWER_SUPPLY_TIME"],
+                        "critPaths": ["powerSupply/conditions/timer>=10&timer<=6000"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Set a timer to 60 minutes.",
+                      "criteria": {
+                        "actions": ["INC_POWER_SUPPLY_TIME"],
+                        "critPaths": ["powerSupply/conditions/timer>=10&timer<=6000"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Set a timer to 60 minutes.",
+                      "criteria": {
+                        "actions": ["INC_POWER_SUPPLY_TIME"],
+                        "critPaths": ["powerSupply/conditions/timer>=10&timer<=6000"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Set a timer to sixty minutes.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Start the power supply.",
+                      "criteria": {
+                        "actions": [
+                          "SET_POWER_SUPPLY_ACTIVE"
+                        ],
+                        "critPaths": [
+                          "powerSupply/conditions/active=true"
+                        ]
+                      }
+                    },
+                    "l2": {
+                      "task": "Start the power supply.",
+                      "criteria": {
+                        "actions": [
+                          "SET_POWER_SUPPLY_ACTIVE"
+                        ],
+                        "critPaths": [
+                          "powerSupply/conditions/active=true"
+                        ]
+                      }
+                    },
+                    "l3": {
+                      "task": "Start the power supply.",
+                      "criteria": {
+                        "actions": [
+                          "SET_POWER_SUPPLY_ACTIVE"
+                        ],
+                        "critPaths": [
+                          "powerSupply/conditions/active=true"
+                        ]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Set a timer to ten minutes.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Wait until the time has elapsed.",
+                      "criteria": {
+                        "actions": [
+                          "COUNT_DOWN_POWER_SUPPLY_TIME"
+                        ],
+                        "critPaths": [
+                          "powerSupply/conditions/timer=0"
+                        ]
+                      }
+                    },
+                    "l2": {
+                      "task": "Wait until the time has elapsed.",
+                      "criteria": {
+                        "actions": [
+                          "COUNT_DOWN_POWER_SUPPLY_TIME"
+                        ],
+                        "critPaths": [
+                          "powerSupply/conditions/timer=0"
+                        ]
+                      }
+                    },
+                    "l3": {
+                      "task": "Wait until the time has elapsed.",
+                      "criteria": {
+                        "actions": [
+                          "COUNT_DOWN_POWER_SUPPLY_TIME"
+                        ],
+                        "critPaths": [
+                          "powerSupply/conditions/timer=0"
+                        ]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Set a timer to ten minutes.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Turn off the power switch.",
+                      "criteria": {
+                        "actions": ["SET_POWER_SUPPLY_POWER"],
+                        "critPaths": ["powerSupply/conditions/power=false"]
+                      },
+                      "popups": [{
+                        "fired": false,
+                        "type": "POPUP_QUESTION",
+                        "size": "popup",
+                        "data": {
+                          "components": [
+                            {
+                              "component": "Popup",
+                              "props": {
+                                "type": "Popup",
+                                "id": 1,
+                                "label": "How do you know if the gel has run for long enough?",
+                                "choices": [
+                                  {
+                                    "label": "The dye front is missing.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect."
+                                  },
+                                  {
+                                    "label": "The dye front is at the top across the wells.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect."
+                                  },
+                                  {
+                                    "label": "The dye front is at the bottom of the gel.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Correct."
+                                  }
+                                ],
+                                "attempts": "unlimited",
+                                "answer": 2,
+                                "correct": null
+                              }
+                            }
+                          ]
+                        }
+                      }]
+                    },
+                    "l2": {
+                      "task": "Turn off the power switch.",
+                      "criteria": {
+                        "actions": ["SET_POWER_SUPPLY_POWER"],
+                        "critPaths": ["powerSupply/conditions/power=false"]
+                      },
+                      "popups": [{
+                        "fired": false,
+                        "type": "POPUP_QUESTION",
+                        "size": "popup",
+                        "data": {
+                          "components": [
+                            {
+                              "component": "Popup",
+                              "props": {
+                                "type": "Popup",
+                                "id": 1,
+                                "label": "How do you know if the gel has run for long enough?",
+                                "choices": [
+                                  {
+                                    "label": "The dye front is missing.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect."
+                                  },
+                                  {
+                                    "label": "The dye front is at the top across the wells.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect."
+                                  },
+                                  {
+                                    "label": "The dye front is at the bottom of the gel.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Correct."
+                                  }
+                                ],
+                                "attempts": "unlimited",
+                                "answer": 2,
+                                "correct": null
+                              }
+                            }
+                          ]
+                        }
+                      }]
+                    },
+                    "l3": {
+                      "task": "Turn off the power switch.",
+                      "criteria": {
+                        "actions": ["SET_POWER_SUPPLY_POWER"],
+                        "critPaths": ["powerSupply/conditions/power=false"]
+                      },
+                      "popups": [{
+                        "fired": false,
+                        "type": "POPUP_QUESTION",
+                        "size": "popup",
+                        "data": {
+                          "components": [
+                            {
+                              "component": "Popup",
+                              "props": {
+                                "type": "Popup",
+                                "id": 1,
+                                "label": "How do you know if the gel has run for long enough?",
+                                "choices": [
+                                  {
+                                    "label": "The dye front is missing.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect."
+                                  },
+                                  {
+                                    "label": "The dye front is at the top across the wells.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Incorrect."
+                                  },
+                                  {
+                                    "label": "The dye front is at the bottom of the gel.",
+                                    "checked": false,
+                                    "correct": null,
+                                    "feedback": "Correct."
+                                  }
+                                ],
+                                "attempts": "unlimited",
+                                "answer": 2,
+                                "correct": null
+                              }
+                            }
+                          ]
+                        }
+                      }]
+                    }
+                  },
+                  "action": "",
+                  "aria": "Turn off the power switch.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Unplug the electrodes from the power supply.",
+                      "criteria": {
+                        "actions": ["SET_POWER_SUPPLY_ANODE_CONNECTED"],
+                        "critPaths": ["powerSupply/conditions/anodeConnected=false&cathodeConnected=false"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Unplug the electrodes from the power supply.",
+                      "criteria": {
+                        "actions": ["SET_POWER_SUPPLY_ANODE_CONNECTED"],
+                        "critPaths": ["powerSupply/conditions/anodeConnected=false&cathodeConnected=false"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Unplug the electrodes.",
+                      "criteria": {
+                        "actions": ["SET_POWER_SUPPLY_ANODE_CONNECTED"],
+                        "critPaths": ["powerSupply/conditions/anodeConnected=false&cathodeConnected=false"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Unplug the electrodes from the power supply.",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                },
+                {
+                  "levels": {
+                    "l1": {
+                      "task": "Carefully remove the cover from the electrophoresis box to inspect your gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_BOX_OPEN"],
+                        "critPaths": ["gelBoxes/type=Protein Gel Electrophoresis Box/conditions/open=true"]
+                      }
+                    },
+                    "l2": {
+                      "task": "Remove the cover to inspect your gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_BOX_OPEN"],
+                        "critPaths": ["gelBoxes/type=Protein Gel Electrophoresis Box/conditions/open=true"]
+                      }
+                    },
+                    "l3": {
+                      "task": "Inspect your gel.",
+                      "criteria": {
+                        "actions": ["SET_GEL_BOX_OPEN"],
+                        "critPaths": ["gelBoxes/type=Protein Gel Electrophoresis Box/conditions/open=true"]
+                      }
+                    }
+                  },
+                  "action": "",
+                  "aria": "Carefully remove the cover from the electrophoresis box to inspect your gel",
+                  "comments": "",
+                  "notes": [],
+                  "complete": false
+                }
+              ]
+            }
+          ],
+          "Notes": [],
+          "complete": false
+        },
+        "Results": {
+          "complete": false
+        },
+        "Summary": {
+          "complete": false
+        },
+        "Reflection": {
+          "complete": false,
+          "components": [
+            {
+              "component": "SCQ",
+              "props": {
+                "type": "SCQ",
+                "id": 1,
+                "levels": {
+                  "l1": {
+                    "label": "Protein samples are separated using the following technique:",
+                    "choices": [
+                      {
+                        "label": "SDS polyacrylamide gel electrophoresis.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Nitrocellulose membrane transfer.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Agarose gel electrophoresis.",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": 2,
+                    "answer": 1,
+                    "correct": null
+                  },
+                  "l2": {
+                    "label": "SDS-PAGE is a technique for separating ______ based on their molecular weight.",
+                    "choices": [
+                      {
+                        "label": "DNA",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "RNA",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "proteins",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": 2,
+                    "answer": 3,
+                    "correct": null
+                  },
+                  "l3": {
+                    "label": "The reason we use Sodium Dodecyl Sulfate (SDS) in this assay is ________________.",
+                    "choices": [
+                      {
+                        "label": "It creates the electric current that moves proteins through the gel.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "SDS breaks down cell membranes and coats the entire unfolded protein in a shell of negative charge.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "It allows us to visualise the proteins moving through the gel so that the gel can be stopped when the proteins reach the bottom of the gel.",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": 3,
+                    "answer": 2,
+                    "correct": null
+                  }
+                }
+              }
+            },
+            {
+              "component": "SCQ",
+              "props": {
+                "type": "SCQ",
+                "id": 2,
+                "levels": {
+                  "l1": {
+                    "label": "Using SDS imparts an overall _______ charge to the proteins.",
+                    "choices": [
+                      {
+                        "label": "positive",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "negative",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "neutral",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": 2,
+                    "answer": 2,
+                    "correct": null
+                  },
+                  "l2": {
+                    "label": "Why is the 4X SDS sample buffer added to the samples?",
+                    "choices": [
+                      {
+                        "label": "To denature the proteins and coat the proteins with negative charges.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "To prevent the samples from degrading.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "To dilute the protein samples to the correct concentration.",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": 2,
+                    "answer": 1,
+                    "correct": null
+                  },
+                  "l3": {
+                    "label": "Why are samples heated before loading them on the SDS gel?",
+                    "choices": [
+                      {
+                        "label": "Heating the samples will reduce clumping of proteins but will not alter the native 3-dimensional protein structure.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Heating the samples will destroy any possible contamination acquired from processing the samples in previous steps. This will ensure protein specificity during the Western blot process.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Heating the samples speeds up the protein denaturation process. This is important as proteins need to be unfolded in order to successfully separate out according to size during the SDS polyacrylamide gel electrophoresis step.",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": 2,
+                    "answer": 3,
+                    "correct": null
+                  }
+                }
+              }
+            },
+            {
+              "component": "SCQ",
+              "props": {
+                "type": "SCQ",
+                "id": 3,
+                "levels": {
+                  "l1": {
+                    "label": "In a PAGE gel, proteins are separated only based on their _______?",
+                    "choices": [
+                      {
+                        "label": "hydrophobicity",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "molecular weight",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "charge",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": 2,
+                    "answer": 2,
+                    "correct": null
+                  },
+                  "l2": {
+                    "label": "Which of the following statements are true about SDS-PAGE?",
+                    "choices": [
+                      {
+                        "label": "It separates proteins only by charge.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "The main ingredient in the gel is agarose.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "It requires a protein denaturing gel.",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": 2,
+                    "answer": 3,
+                    "correct": null
+                  },
+                  "l3": {
+                    "label": "Why might you rather want to run the SDS gel electrophoresis at a low voltage than a high voltage?",
+                    "choices": [
+                      {
+                        "label": "A high voltage would cause all the proteins to travel at the same speed and will not separate them through the gel.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "A high voltage would speed up the process and you are more likely to lose samples running off the gel.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "A low voltage will generate less heat and provide better protein separation and band resolution.",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": 2,
+                    "answer": 3,
+                    "correct": null
+                  }
+                }
+              }
+            },
+            {
+              "component": "SCQ",
+              "props": {
+                "type": "SCQ",
+                "id": 4,
+                "levels": {
+                  "l1": {
+                    "label": "You receive the following gel after electrophoresis. What went wrong?",
+                    "image": "gel-5.10.svg",
+                    "ariaLabel": "Image of a gel, showing the dye front halfway down the gel, with no results showing for the samples.",
+                    "choices": [
+                      {
+                        "label": "You did not allow for enough time when running the gel.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "The temperature of the gel during the run was too low.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "You forgot to turn on the power source.",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": 2,
+                    "answer": 1,
+                    "correct": null
+                  },
+                  "l2": {
+                    "label": "Why is Sodium Dodecyl Sulfate (SDS) used in this assay?",
+                    "choices": [
+                      {
+                        "label": "It creates the electric current that moves proteins through the gel.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "SDS coats the entire protein in a shell of negative charge, allowing proteins to migrate toward the positive electrode.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "It allows us to visualise the proteins moving through the gel so that the gel can be stopped when the proteins are separated.",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": 2,
+                    "answer": 2,
+                    "correct": null
+                  },
+                  "l3": {
+                    "label": "SDS sample buffer contains glycerol, which has a higher density than running buffer. Why is glycerol included in SDS sample buffer?",
+                    "choices": [
+                      {
+                        "label": "The higher density of glycerol creates a denser sample buffer, ensuring that the protein samples sink to the bottom of the gel well.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Glycerol aids in the protein denaturation step as it acts as a detergent.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Glycerol ensures stability of the protein structure and helps with accurate protein separation.",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": 2,
+                    "answer": 1,
+                    "correct": null
+                  }
+                }
+              }
+            },
+            {
+              "component": "SCQ",
+              "props": {
+                "type": "SCQ",
+                "id": 5,
+                "levels": {
+                  "l1": {
+                    "label": "After running your protein gel, you can inspect the gel for protein bands and determine if your previous gene editing step worked. Is this statement true?",
+                    "choices": [
+                      {
+                        "label": "Yes, running a protein gel is the final step of the experiment.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "No, you need to visualize the protein bands first, preferably by Western blot.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "No, the only way to determine if the experiment worked is to infect the edited cell lines with HIV.",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": 3,
+                    "answer": 2,
+                    "correct": null
+                  },
+                  "l2": {
+                    "label": "How can you confirm if the electric current is on and correctly applied to the gel system?",
+                    "choices": [
+                      {
+                        "label": "You can see bubbles moving in the tank buffer and the blue sample buffer is traveling downwards.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "You will not be able to detect this until the end.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "You will see the blue sample buffer moving upwards from the wells.",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": 2,
+                    "answer": 1,
+                    "correct": null
+                  },
+                  "l3": {
+                    "label": "In this experiment, you aimed to detect the presence or absence of a specific protein produced by the CCR5 gene. What proteins were separated by size during the SDS PAGE gel electrophoresis?",
+                    "choices": [
+                      {
+                        "label": "Only the CCR5 protein in the positive control and the protein ladder.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "All cellular proteins in the ladder and the pancreas and macrophage cell lines.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "All the different proteins encoded by the CCR5 gene.",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": 2,
+                    "answer": 2,
+                    "correct": null
+                  }
+                }
+              }
+            },
+            {
+              "component": "SCQ",
+              "props": {
+                "type": "SCQ",
+                "id": 6,
+                "levels": {
+                  "l1": {
+                    "label": "How confident do you feel about using the technique you learned?",
+                    "choices": [
+                      {
+                        "label": "Not confident at all.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Slightly confident.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Somewhat confident.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Fairly confident.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Very confident.",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": "unlimited",
+                    "answer": null,
+                    "correct": null
+                  },
+                  "l2": {
+                    "label": "How confident do you feel about using the technique you learned?",
+                    "choices": [
+                      {
+                        "label": "Not confident at all.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Slightly confident.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Somewhat confident.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Fairly confident.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Very confident.",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": "unlimited",
+                    "answer": null,
+                    "correct": null
+                  },
+                  "l3": {
+                    "label": "How confident do you feel about using the technique you learned?",
+                    "choices": [
+                      {
+                        "label": "Not confident at all.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Slightly confident.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Somewhat confident.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Fairly confident.",
+                        "checked": false,
+                        "correct": null
+                      },
+                      {
+                        "label": "Very confident.",
+                        "checked": false,
+                        "correct": null
+                      }
+                    ],
+                    "attempts": "unlimited",
+                    "answer": null,
+                    "correct": null
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

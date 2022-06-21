@@ -1,0 +1,70 @@
+@import 'styles/_colors.scss';
+
+.gel-modal-inner {
+  padding: 32px;
+  width: calc(100% - 64px);
+
+  .gel-position-content {
+    position: relative;
+    width: calc(100% - 168px - 32px);
+    display: inline-block;
+    height: 100%;
+
+    .gel-box{
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      img {
+        width: 100%;
+      }
+    }
+    .gel {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
+  .gel-position-controls{
+    margin-left: 32px;
+    width: 136px;
+    height: 102px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    border-radius: 5px;
+    background: $navy1;
+    position: absolute;
+    display: inline-block;
+    padding: 16px;
+
+    p {
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      margin: 0 0 16px 0;
+    }
+    button {
+      width: 64px;
+      height: 64px;
+      border-radius: 5px;
+      background-color: $navy7;
+      border: none;
+      padding: 0;
+
+      span {
+        display: none;
+      }
+      &:last-of-type {
+        margin-left: 8px;
+      }
+    }
+  }
+}

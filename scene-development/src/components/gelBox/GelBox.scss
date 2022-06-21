@@ -1,0 +1,98 @@
+@import '../../styles/styles';
+@import '../../styles/colors';
+
+.GelBox {
+  cursor: pointer;
+
+  .electrodes {
+    position: absolute;
+    bottom: 110px;
+    left: 8px;
+    height: 75px;
+    width: calc(100% - 16px);
+    z-index: 99;
+    pointer-events: none;
+
+    div.electrode {
+      height: 100%;
+      width: 50%;
+      position: absolute;
+
+      &:first-of-type {
+        left: 0;
+      }
+      &:last-of-type {
+        right: 0;
+      }
+
+      div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+
+  .label {
+    position: absolute;
+    bottom: 98px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $body;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 14px;
+    text-align: center;
+    margin: 0px;
+    padding: 4px 6px;
+    border-radius: 5px;
+    background-color: $navy2;
+    pointer-events: none;
+    color: white;
+    white-space: nowrap;
+    user-select: none;
+
+    &:after {
+      position: absolute;
+      top: calc(100% - 1px);
+      left: calc(50% - 10px);
+      width: 0px;
+      height: 0px;
+      content: "";
+      border-style: solid;
+      border-width: 10px 10px 0px;
+      border-color: $navy2 transparent transparent;
+    }
+  }
+
+  &.ProteinGelElectrophoresisBox .label{
+    bottom: 155px;
+  }
+
+  .open-gel-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .show-inside-gel-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 102px;
+  }
+  &.open {
+    .open-gel-box {
+      height: 100px;
+    }
+  }
+
+  &.open .label{
+    bottom: calc(100% + 10px);
+  }
+}

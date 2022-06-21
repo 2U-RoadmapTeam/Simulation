@@ -11,14 +11,14 @@
     height: calc(100% - 148px);
     padding: 36px;
     overflow-y: scroll;
-
+    // width: 80%;
     .popout-header {
 
       h2 {
         display: inline-block;
         padding-bottom: 9px;
         margin: 0;
-        border-bottom: 8px solid $blue2;
+        border-bottom: 8px solid #003E6B;
         font-weight: 700;
         line-height: 34px;
         font-size: 42px;
@@ -59,6 +59,7 @@
     background: #e5ecf0;
     box-shadow: 0 -8px 16px 0 rgba(0, 0, 0, 0.25);
     z-index: 2;
+    border-radius: 10px;
 
     .popout-btn {
       width: 180px;
@@ -66,7 +67,8 @@
       font-size: 16px;
       border: none;
       border-radius: 6px;
-      background-color: #fecf48;
+      background-color: $charcoal1;
+      color: white;
       cursor: pointer
     }
   }

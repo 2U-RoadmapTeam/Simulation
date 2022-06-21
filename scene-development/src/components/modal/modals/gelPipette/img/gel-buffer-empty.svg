@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="641" height="412" fill="none" viewBox="0 0 641 412">
+    <g clip-path="url(#a)">
+        <path fill="#B2D3DC" d="M701 349.349L356.113 189.42 128.398 347.357l-.398-.266 279.144 129.643 86.95.266H701V349.349z" opacity=".4"/>
+        <path fill="#B2D3DC" d="M501 476.867L128 300l228.113-158L701 301.929v174.938H501z" opacity=".8"/>
+        <path fill="#B2D3DC" d="M701 349.349L356.113 189.421V142L701 301.929v47.42z" opacity=".2"/>
+        <path fill="#B2D3DC" d="M407.5 477L128 347.5V300l372 176.5-92.5.5z" opacity=".5"/>
+        <path fill="#376B79" d="M293 197.5l63-43.5v42l-63 43.5v-42z" opacity=".5"/>
+        <path fill="#2E5D6B" d="M377 163l-21-9v42l21 9v-42z" opacity=".6"/>
+        <path fill="#2E5D6B" d="M377 205l-21-9-63.5 44 20.5 9 64-44z" opacity=".7"/>
+        <path fill="#376B79" d="M221 248.5l63-43.5v42l-63 43.5v-42z" opacity=".5"/>
+        <path fill="#2E5D6B" d="M305 214l-21-9v42l21 9v-42z" opacity=".6"/>
+        <path fill="#2E5D6B" d="M305 256l-21-9-63 43.5 20 9.5 64-44z" opacity=".7"/>
+        <path fill="#376B79" d="M150 297.5l63-43.5v42l-63 44v-42.5z" opacity=".5"/>
+        <path fill="#2E5D6B" d="M234 263l-21-9v42l21 9v-42z" opacity=".6"/>
+        <path fill="#2E5D6B" d="M234 305l-21-9-63 44 20 9 64-44z" opacity=".7"/>
+    </g>
+    <defs>
+        <clipPath id="a">
+            <path fill="#fff" d="M0 0h641v412H0z"/>
+        </clipPath>
+    </defs>
+</svg>

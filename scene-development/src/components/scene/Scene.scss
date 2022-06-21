@@ -1,0 +1,234 @@
+@import 'styles/_colors.scss';
+
+// .content{
+//   min-width: 666px;
+// }
+
+.Toastify__progress-bar.Toastify__progress-bar--animated.Toastify__progress-bar--default {
+    visibility: hidden !important;
+}
+
+button:disabled{
+  cursor: not-allowed !important;
+}
+
+
+#zoom {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  background:white;
+  border-radius: 5px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+
+  button {
+    background: $navy6;
+    border: none;
+    width: 51px;
+    height: 51px;
+    cursor: pointer;
+
+    &:disabled {
+      background: #DDD;
+      opacity: 0.5;
+    }
+
+    &:first-of-type{
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    &:last-of-type{
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    p {
+      display: none;
+    }
+  }
+  p{
+    margin: 0 8px;
+    text-align: center;
+    line-height: 52px;
+  }
+}
+
+.move-box {
+  position: absolute;
+  left: 100%;
+  top: 32px;
+  width: calc(100%);
+
+  .wrapper {
+    position: relative;
+    .collapse {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 200px;
+
+      .move-dialog {
+        background: white;
+        border-radius: 5px;
+        overflow: hidden;
+
+        .move-dialog-head{
+          h5{
+            background: $navy5;
+            color: $charcoal1;
+            margin: 0;
+            padding: 8px;
+          }
+          .close {
+            position: absolute;
+            top: -5px;
+            right: 16px;
+            cursor: pointer;
+            z-index: 999;
+          }
+        }
+        .move-dialog-body{
+          padding: 8px;
+
+          button {
+            border-radius: 3px;
+            padding: 4px;
+            background: $navy6;
+            border: none;
+            margin: 2px;
+            cursor: pointer;
+            color: $navy1;
+
+            &:hover{
+              background-color: $navy1;
+              color: $navy6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.content {
+
+  width: 100vw;
+  height: 100%;
+  overflow: visible;
+  position: relative;
+
+  &.sidebar-active {
+    margin-right: 384px;
+    width: calc(100vw - 383px);
+  }
+
+  #scene {
+
+    overflow: auto;
+    min-height: 768px;
+
+    #dragdrop {
+
+      background-image: linear-gradient(to bottom, $navy8, $navy9);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+
+      .pipette__volume-string {
+        display: none;
+      }
+
+      .draggable img {
+        pointer-events: none;
+      }
+
+      [draggable] {
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        /* Required to make elements draggable in old WebKit */
+        -khtml-user-drag: element;
+        -webkit-user-drag: element;
+        cursor: move;
+      }
+
+
+      ul{
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+      }
+
+      li{
+        margin: 0;
+        padding: 0 8px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+
+        img::-moz-selection {
+          background:transparent;
+        }
+        img::selection {
+          background:transparent;
+        }
+      }
+
+      .held{
+        border: 2px solid red;
+
+      }
+    }
+  }
+}
+
+.undoDiv{
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  height: 50px;
+  width: 260px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0px;
+}
+
+.undoBtn{
+  vertical-align: top;
+  height: 44px;
+  width: 120px;
+  border-radius: 5px;
+  background-color: #003e6b;
+  color: white;
+  font-size: 16px;
+  margin-top: 3px;
+  margin-left: 3px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.undoBtnIcon {
+  padding-right: 8px;
+}
+
+
+.undoAttemptImg{
+  margin-left: 5px;
+  margin-top: 7px;
+}

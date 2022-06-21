@@ -1,0 +1,21 @@
+@import 'styles/_colors.scss';
+
+.timerText{
+    font-size: 60px;
+    text-align: center;
+}
+
+.modal-footer.countdown{
+  text-align: center !important;
+  height: 60px;
+  margin-top: 32px !important;
+
+  .modal-btn-primary{
+    margin: 0 auto;
+    text-align: center;
+
+    &:disabled{
+      background-color: #CCC !important;
+    }
+  }
+}

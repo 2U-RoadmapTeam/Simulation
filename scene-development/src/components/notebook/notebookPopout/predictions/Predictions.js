@@ -1,19 +1,19 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-// import { throttle } from "lodash";
-// import {
-//   unscaledStart,
-//   unscaledDrag,
-//   end,
-//   getPointerTarget,
-//   getTransform
-// } from "lib/hotspot";
+import { throttle } from "lodash";
+import {
+  unscaledStart,
+  unscaledDrag,
+  end,
+  getPointerTarget,
+  getTransform
+} from "../../../../lib/hotspot";
 
-// import {default as Gel} from 'components/gel/Predictions-510';
-import SceneData from "../../../../data/scene.json";
-// import PredictionsChoiceQuestion from "components/questions/predictionsChoiceQuestion/PredictionsChoiceQuestion";
-// import PredictionsData from "data/notebook.json";
-
+import {default as Gel} from '../../../gel/Predictions-510';
+import SceneData from '../../../../data/scene.json';
+import PredictionsChoiceQuestion from "../../../questions/predictionsChoiceQuestion/PredictionsChoiceQuestion";
+import PredictionsData from "../../../../data/notebook.json";
+import Simulation from "../simulation/Simulation";
 import {
   createPSCQ,
   pushInteractions,
@@ -21,20 +21,19 @@ import {
   setPredictionBandHeight,
   setDropdownPrediction,
   setPredictionLaneVisible,
-  setPredictionAllHeights,
+  setPredictionAllHeights
 } from "../../../../actions";
-
 import "./Predictions.scss";
 
-// import gelPrediction from "./img/gel-prediction-46.svg";
-// import plasmids from "./img/plasmids.svg";
-// import combinationBands from "./img/combinations.svg";
-// import lane1 from "./img/lane-1.svg";
-// import lane2 from "./img/lane-2.svg";
-// import lane3 from "./img/lane-3.svg";
-// import lane4 from "./img/lane-4.svg";
-// import lane5 from "./img/lane-5.svg";
-// import lane6 from "./img/lane-5.svg";
+import gelPrediction from "./img/gel-prediction-46.svg";
+import plasmids from "./img/plasmids.svg";
+import combinationBands from "./img/combinations.svg";
+import lane1 from "./img/lane-1.svg";
+import lane2 from "./img/lane-2.svg";
+import lane3 from "./img/lane-3.svg";
+import lane4 from "./img/lane-4.svg";
+import lane5 from "./img/lane-5.svg";
+import lane6 from "./img/lane-5.svg";
 
 // solution tubes
 import gkmin from "./img/solution-gkmin.svg";
@@ -60,7 +59,7 @@ const images = {
   "gkplus Selected": gkplusSelected,
   "gaplus Selected": gaplusSelected,
   "glig Selected": gligSelected,
-  emptyTube: emptyTube,
+  emptyTube: emptyTube
 };
 
 class Predictions extends Component {
@@ -161,8 +160,9 @@ class Predictions extends Component {
     // };
 
     this.state = {
-      predictions: [],
-    };
+      predictions: []
+    }
+
   }
 
   // extractHeights = lane => {
@@ -815,82 +815,62 @@ class Predictions extends Component {
   //   );
   // }
 
-  buildComponent = (data) => {
-    // const components = data.components.map((component, index) => (
-    // <Gel key={index} id={component.props.id} />
-    // ));
-    // return (components)
-  };
+buildComponent = (data) => {
+  const components = data.components.map((component, index) => (
+    <Gel key={index} id={component.props.id} />
+  ));
 
-  componentDidMount() {
+  return (components)
+}
+
+componentDidMount(){
     this.setState({
-      predictions: this.buildComponent(SceneData["Gel"]),
-    });
-  }
+        predictions: this.buildComponent(SceneData["Gel"])
+    })
+}
 
-  render() {
+render() {
     return (
-      <div className="Predictions">
-        <div>
-          <p className="description" tabIndex={0}>
-            Ac turpis egestas sed tempus urna et. Erat pellentesque adipiscing
-            commodo elit at. Id diam vel quam elementum pulvinar etiam non. In
-            aliquam sem fringilla ut morbi tincidunt augue. Eget velit aliquet
-            sagittis id. Senectus et netus et malesuada fames. Cursus eget nunc
-            scelerisque viverra mauris. Sit amet facilisis magna etiam tempor
-            orci. Malesuada bibendum arcu vitae elementum curabitur. Feugiat
-            vivamus at augue eget arcu. Consequat semper viverra nam libero.
-            Proin nibh nisl condimentum id venenatis a condimentum vitae.
-            Elementum pulvinar etiam non quam lacus. Id interdum velit laoreet
-            id donec ultrices tincidunt arcu non. Eget magna fermentum iaculis
-            eu non. Quis lectus nulla at volutpat diam ut venenatis tellus.
-            Adipiscing vitae proin sagittis nisl rhoncus. Ullamcorper eget nulla
-            facilisi etiam dignissim diam quis enim. Venenatis a condimentum
-            vitae sapien pellentesque habitant morbi tristique senectus.
-          </p>
-          <p className="description" tabIndex={0}>
-            Purus in mollis nunc sed id semper risus in hendrerit. Erat
-            imperdiet sed euismod nisi porta lorem mollis. Sit amet aliquam id
-            diam maecenas. Sed enim ut sem viverra aliquet. Non enim praesent
-            elementum facilisis. Id porta nibh venenatis cras sed felis eget
-            velit. Lectus sit amet est placerat. Volutpat commodo sed egestas
-            egestas. Fringilla ut morbi tincidunt augue interdum velit.
-            Suspendisse in est ante in nibh. Nulla aliquet porttitor lacus
-            luctus accumsan tortor posuere ac. Quis eleifend quam adipiscing
-            vitae proin sagittis. Ornare aenean euismod elementum nisi quis
-            eleifend quam adipiscing.
-          </p>
-        </div>
-        <div>{this.state.predictions}</div>
-      </div>
-    );
+        <div className="Predictions">
+            {/* <div>
+                <p className="description" tabIndex={0}>
+                In this simulation you will use SDS polyacrylamide gel electrophoresis (SDS-PAGE) to separate proteins of cellular extracts, which contain all proteins of a cell. The extracts we are interested in come from two CRISPR-edited macrophage cell lines.
+                </p>
+                <p className="description" tabIndex={0}>
+                  In addition to your two edited macrophage cell lines, you also need to include appropriate controls for this experiment. Controls increase the reliability and reproducibility of results. You can learn more about controls in the LabXchange pathway Scientific Method.
+                </p>
+            </div>
+            <div>
+              {this.state.predictions} */}
+              <Simulation/>
+            </div>
+      // </div>
+    )
   }
 }
 
-// const mapStateToProps = (state, ownProps) => {
-//   return {
-//     level: state.notebook.level,
-//     type: state.gel.gels[0].type,
-//     predictions: state.gel.gels[0].prediction,
-//     PSCQ: state.PSCQ,
-//     bandData: state.gel.gels[0].predictions46,
-//     dropDownChoice: state.gel.gels[0].predictions46.dropDownChoice,
-//     dropDownChoiceId: state.gel.gels[0].predictions46.dropDownChoiceId,
-//     lanesVisible: state.gel.gels[0].predictions46.lanesVisible
-//   };
-// };
+const mapStateToProps = (state, ownProps) => {
+  return {
+    level: state.notebook.level,
+    // type: state.gel.gels[0].type,
+    // predictions: state.gel.gels[0].prediction,
+    PSCQ: state.PSCQ,
+    // bandData: state.gel.gels[0].predictions46,
+    // dropDownChoice: state.gel.gels[0].predictions46.dropDownChoice,
+    // dropDownChoiceId: state.gel.gels[0].predictions46.dropDownChoiceId,
+    // lanesVisible: state.gel.gels[0].predictions46.lanesVisible
+  };
+};
 
-// export default connect(
-//   mapStateToProps,
-//   {
-//     createPSCQ,
-//     pushInteractions,
-//     setGelPrediction,
-//     setPredictionBandHeight,
-//     setDropdownPrediction,
-//     setPredictionLaneVisible,
-//     setPredictionAllHeights
-//   }
-// )(Predictions);
-
-export default Predictions;
+export default connect(
+  mapStateToProps,
+  {
+    createPSCQ,
+    pushInteractions,
+    setGelPrediction,
+    setPredictionBandHeight,
+    setDropdownPrediction,
+    setPredictionLaneVisible,
+    setPredictionAllHeights
+  }
+)(Predictions);

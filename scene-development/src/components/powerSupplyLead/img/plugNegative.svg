@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="44" fill="none" viewBox="0 0 8 44">
+    <rect width="8" height="14" y="12" fill="#000" rx="1"/>
+    <rect width="4" height="14" x="2" fill="#000" rx="1"/>
+    <rect width="6" height="3" x="1" fill="#000" rx="1"/>
+    <path fill="#BF9603" d="M1 26h6v1H1z"/>
+    <path fill="#E7CF7A" d="M1 26h2v1H1z"/>
+    <path fill="#866800" d="M5 26h2v1H5z"/>
+    <path fill="#000" d="M2 34h4v1H2zM2 36h4v1H2z"/>
+    <path fill="#BF9603" fill-rule="evenodd" d="M2 27h4v7H2v-7zm0 8h4v1H2v-1zm4 2H2v1h4v-1z" clip-rule="evenodd"/>
+    <path fill="#866800" fill-rule="evenodd" d="M5 27h1v7H5v-7zm0 8h1v1H5v-1zm1 2H5v1h1v-1z" clip-rule="evenodd"/>
+    <path fill="#E7CF7A" fill-rule="evenodd" d="M2 27h1v7H2v-7zm0 8h1v1H2v-1zm1 2H2v1h1v-1z" clip-rule="evenodd"/>
+    <path fill="#BF9603" d="M3 38h2v5l-1 1-1-1v-5z"/>
+    <path fill="#866800" d="M4 38h1v5l-1 1v-6z"/>
+</svg>

@@ -1,88 +1,32 @@
 @import "../../../../styles/colors";
 @import "../../../../styles/fonts";
 
-.IntroText {
-  width: 70%;
-  height: 600px;
-  margin: auto;
-}
-.Context {
-  .description {
-    line-height: 1.5;
-    .bold-text {
-      font-family: "Bio Sans";
-      font-style: normal;
-      font-weight: bold;
-    }
-  }
-  .Section {
-    .SectionHeading {
-      border-bottom: 1px solid $charcoal1;
-    }
+.take-away1 {
+	height: auto;
+	display: -webkit-box;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0 0 8px 0;
+	border-radius: 5px;
+	border: solid 1px $black;
+	background-color: white;
+	overflow: hidden;
 
-    .contextTable {
-      border-radius: 5px;
-      background-color: $navy5;
-      padding: 32px;
+  	div:first-of-type {
+    	width: 500px;
+    	background: #336589;
 
-      ul {
-        margin: 0;
-        padding-left: 17px;
-
-        li {
-          margin-bottom: 16px;
-
-          &:last-of-type {
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
-
-    .demoImage {
-      width: 100%;
-      height: auto;
-      margin-top: 32px;
-    }
-
-    .Group {
-      .Table {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        border-radius: 6px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-          0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        background: $navy1;
-        overflow: hidden;
-
-        div.Item {
-          width: 25%;
-          border-left: 1px solid white;
-          flex-direction: row;
-          overflow: hidden;
-          box-sizing: border-box;
-
-          .table-heading {
-            padding: 8px;
-            margin: 0;
-            font-weight: 200;
-            color: $white;
-            border-bottom: 1px solid white;
-          }
-          .table-content {
-            background: $navy2;
-            margin-bottom: -5px;
-
-            img {
-              height: 343px;
-            }
-          }
-          &:first-of-type {
-            border-left: none;
-          }
-        }
-      }
-    }
-  }
+     	.img1 {
+			display: block;
+			margin: auto;
+      width: 650px;
+	  height: 450px;
+       		// background-color: $navy2;
+     	}
+  	}
+  	.tip {
+    	width: 75%;
+    	margin-left: 10px;
+  	}
 }

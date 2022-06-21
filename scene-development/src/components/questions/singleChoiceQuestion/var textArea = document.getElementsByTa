@@ -1,0 +1,81 @@
+var textArea = document.getElementsByTagName('textarea')
+var arr = [].slice.call(textArea)
+ 
+function changeFocus(num) {
+  textArea[num].focus()
+}
+ 
+function findIndex (element, array) {
+  for (i = 0; i < array.length; i++) {
+    if (array[i] === element) {
+      return i;
+    } else {
+      continue
+    }
+  }
+}
+ 
+function handleKey(e) {
+  let x = document.activeElement;
+  let index = findIndex(x, arr)
+ 
+  // Each index here refers to the index of the textArea in the DOM, the object props represent the available move for that element.
+  let moves = [
+    {"up": null, "down": 0, "left": null, "right": null},     //1
+    {"up": 24, "down": 25, "left": null, "right": 1},   //2
+    {"up": 0, "down": null, "left": null, "right": null},  //3
+    {"up": null, "down": null, "left": 0, "right": 2}, //4
+    {"up": null, "down": null, "left": 1, "right": 3}, //5 
+    {"up": null, "down": null, "left": 2, "right": 4}, //6
+    {"up": null, "down": null, "left": 3, "right": 5}, //7
+    {"up": null, "down": 5, "left": null, "right": null}, //8
+    {"up": 14, "down": 15, "left": 4, "right": 6}, //9
+    {"up": 5, "down": 16, "left": null, "right": null}, //10
+    {"up": 15, "down": 17, "left": null, "right": null}, //11
+    {"up": 16, "down": 18, "left": null, "right": null}, //12
+    {"up": null, "down": null, "left": null, "right": 18}, //13
+    {"up": 17, "down": 19, "left": 28, "right": null}, //14
+    {"up": 18, "down": 20, "left": null, "right": null}, //15
+    {"up": 19, "down": null, "left": null, "right": null}, //16
+    {"up": null, "down": null, "left": null, "right": null},
+    {"up": null, "down": null, "left": null, "right": null},
+    {"up": null, "down": null, "left": null, "right": null},
+    {"up": null, "down": null, "left": null, "right": null},
+    {"up": null, "down": null, "left": null, "right": null},
+    {"up": null, "down": null, "left": null, "right": null},
+    {"up": null, "down": null, "left": null, "right": null},
+    {"up": null, "down": null, "left": null, "right": null},
+    {"up": null, "down": null, "left": null, "right": null},
+    {"up": null, "down": null, "left": null, "right": null},
+    {"up": null, "down": null, "left": null, "right": null},
+    {"up": null, "down": null, "left": null, "right": null},
+    {"up": null, "down": null, "left": null, "right": null},
+    {"up": null, "down": null, "left": null, "right": null},
+    {"up": null, "down": null, "left": null, "right": null}
+  ]
+ 
+
+  if (e.key === 'ArrowDown' || e.key === 'Down') {
+  
+    (moves[index].down !== null)? changeFocus(moves[index].down) : console.log('Nothing below block ' + index)
+ 
+    
+ 
+  } else if (e.key === 'ArrowUp' || e.key === 'Up') {
+ 
+    (moves[index].up !== null)? changeFocus(moves[index].up) : console.log('Nothing above block ' + index)
+ 
+  
+  } else if (e.key === 'ArrowLeft'  || e.key === 'Left') {
+ 
+    (moves[index].left !== null)? changeFocus(moves[index].left) : console.log('Nothing left of block ' + index)
+    
+     } else if (e.key === 'ArrowRight' || e.key === 'Right') {
+ 
+    (moves[index].right !== null)? changeFocus(moves[index].right) : console.log('Nothing right of block ' + index)
+    
+  
+  }
+}
+ 
+document.addEventListener('keydown', handleKey)
